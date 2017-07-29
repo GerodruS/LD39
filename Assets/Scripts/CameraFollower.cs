@@ -4,7 +4,10 @@ using UnityEngine;
 
 public class CameraFollower : MonoBehaviour
 {
-    public Transform TargetTransform;
+    [SerializeField]
+    float Factor = 0.75f;
+    [SerializeField]
+    Transform TargetTransform;
     
     void Start()
     {
@@ -16,7 +19,7 @@ public class CameraFollower : MonoBehaviour
         var currentPosition = transform.position;
         var targetPosition = TargetTransform.position;
         targetPosition.z = currentPosition.z;
-        var t = 0.2f * Time.deltaTime;
+        var t = Factor * Time.deltaTime;
         transform.position = Vector3.Lerp(currentPosition, targetPosition, t);
     }
 }
