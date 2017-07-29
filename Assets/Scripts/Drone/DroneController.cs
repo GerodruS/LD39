@@ -7,6 +7,16 @@ public class DroneController : MonoBehaviour
 {
     [SerializeField]
     float Speed = 100.0f;
+    [SerializeField]
+    float Torque = 100.0f;
+    [SerializeField]
+    float PowerLevel = 100.0f;
+    [SerializeField]
+    float RotatingPowerUsage = 1.0f;
+    [SerializeField]
+    float MovingPowerUsage = 2.0f;
+
+    public Events.Float OnPowerLevelChanged;
     
     Rigidbody2D Rigidbody2D;
     
@@ -20,16 +30,23 @@ public class DroneController : MonoBehaviour
         var mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         var dronePosition = transform.position;
         var direction = mousePosition - dronePosition;
+        direction.z = 0.0f;
+        direction.Normalize();
         if (Input.GetMouseButton(0))
         {
-            var currentRotation = transform.rotation;
-            var targetRotation = Quaternion.Euler(0f, 0f, Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg);
-            var t = 0.9f * Time.deltaTime;
-            transform.rotation = Quaternion.Lerp(currentRotation, targetRotation, t);
+            var angle = Quaternion.FromToRotation(transform.right, direction).eulerAngles.z;
+            if (180.0f < angle)
+                angle -= 360.0f;
+            var value = Time.deltaTime * Torque * angle;
+            Rigidbody2D.AddTorque(value);
+            PowerLevel -= Mathf.Abs(value) * RotatingPowerUsage;
         }
         if (Input.GetMouseButton(1))
         {
-            Rigidbody2D.AddForce(transform.right * Time.deltaTime * Speed);
+            var value = Time.deltaTime * Speed;
+            Rigidbody2D.AddForce(transform.right * value);
+            PowerLevel -= value * MovingPowerUsage;
         }
+        OnPowerLevelChanged.Invoke(PowerLevel);
     }
 }

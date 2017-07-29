@@ -190,6 +190,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb018d384839c054f803a4e500884909, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Speed: 100
+  PowerLevel: 100
+  RotatingPowerUsage: 0.001
+  MovingPowerUsage: 0.002
+  OnPowerLevelChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Events+Float, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!212 &212439191741728310
 SpriteRenderer:
   m_ObjectHideFlags: 1
