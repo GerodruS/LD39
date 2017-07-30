@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using UnityEngine;
 
 
 public class Field : MonoBehaviour
@@ -40,6 +41,14 @@ public class Field : MonoBehaviour
         for (int i = 0, n = FieldData.Cells.Length; i < n; ++i)
         {
             var cellData = FieldData.Cells[i];
+            //
+//            cellData.TopRight = false;
+//            cellData.TopLeft = false;
+//            cellData.Right = false;
+//            cellData.Left = false;
+//            cellData.BottomRight = false;
+//            cellData.BottomLeft = false;
+            //
             var x = cellData.Point.X;
             var y = cellData.Point.Y;
             var offset = 0 == x % 2 ? 0.0f : 0.5f;
@@ -67,6 +76,50 @@ public class Field : MonoBehaviour
         OnGameStart.Invoke();
         FindObjectOfType<ProgressLabel>().OnCellProgressWasChanged(0, Cells.Length);
     }
+
+#if UNITY_EDITOR
+    public void RefreshDiscover()
+    {
+        for (int i = 0, n = FieldData.Cells.Length; i < n; ++i)
+        {
+            var c = Cells[i];
+            c.Curtain.SetActive(true);
+            var p = c.Data.Point;
+            var cells = new Dictionary<FieldData.Direction, Cell>();
+            cells.Add(FieldData.Direction.Right, c.Data.Right ? GetCell(p.X + 2, p.Y) : null);
+            cells.Add(FieldData.Direction.Left, c.Data.Left ? GetCell(p.X - 2, p.Y) : null);
+            var offset = 0 == p.X % 2 ? -1 : 0;
+            cells.Add(FieldData.Direction.TopRight, c.Data.TopRight ? GetCell(p.X + 1, p.Y + 1 + offset) : null);
+            cells.Add(FieldData.Direction.TopLeft, c.Data.TopLeft ? GetCell(p.X - 1, p.Y + 1 + offset) : null);
+            cells.Add(FieldData.Direction.BottomRight, c.Data.BottomRight ? GetCell(p.X + 1, p.Y - 0 + offset) : null);
+            cells.Add(FieldData.Direction.BottomLeft, c.Data.BottomLeft ? GetCell(p.X - 1, p.Y - 0 + offset) : null);
+            c.AdjacentCells = cells;
+        }
+        Cell baseCell = null;
+        for (int i = 0, n = FieldData.Cells.Length; i < n; ++i)
+        {
+            var cellData = FieldData.Cells[i];
+            if (cellData.Type == FieldData.CellType.Base)
+            {
+                baseCell = Cells[i];
+                break;
+            }
+        }
+        Discover(baseCell);
+    }
+
+    void Discover(Cell cell)
+    {
+        if (cell != null && cell.Curtain.activeSelf)
+        {
+            cell.Curtain.SetActive(false);
+            foreach (var elem in cell.AdjacentCells)
+            {
+                Discover(elem.Value);
+            }
+        }
+    }
+#endif
 
     public void AbandonCurrentDrone()
     {

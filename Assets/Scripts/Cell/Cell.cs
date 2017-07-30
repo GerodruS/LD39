@@ -62,6 +62,7 @@ public class Cell : MonoBehaviour
             else 
                 Data.Left = open;
         }
+        FindObjectOfType<Field>().RefreshDiscover();
     }
 #endif
 
