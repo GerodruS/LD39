@@ -97,6 +97,13 @@ public class Field : MonoBehaviour
         foreach (var elem in droneCell.AdjacentCells)
         {
             if (elem.Value != targetCell) continue;
+            var cost = FieldData.DirectionCost[elem.Key];
+            if (CurrentDrone.Power < cost)
+            {
+                Debug.LogFormat("Not enough power: {0}/{1}", CurrentDrone.Power, cost);
+                return;
+            }
+            CurrentDrone.Power -= cost;
             MoveDrone(x, y);
             print(elem.Key);
             return;

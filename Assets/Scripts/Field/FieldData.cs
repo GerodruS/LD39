@@ -26,6 +26,16 @@ public class FieldData : ScriptableObject
         {Direction.TopLeft, Direction.BottomRight},
     };
 
+    public Dictionary<Direction, int> DirectionCost = new Dictionary<Direction, int>
+    {
+        {Direction.TopRight, 3},
+        {Direction.Right, 2},
+        {Direction.BottomRight, 1},
+        {Direction.BottomLeft, 1},
+        {Direction.Left, 2},
+        {Direction.TopLeft, 3},
+    };
+
     public enum CellType
     {
         Common,
