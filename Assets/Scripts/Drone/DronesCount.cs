@@ -9,9 +9,9 @@ public class DronesCount : MonoBehaviour
     [SerializeField]
     Text Label;
     
-    public void OnDronesCountWasChanged(int value)
+    public void OnDronesCountWasChanged(int value, int max)
     {
         if (Label == null) return;
-        Label.text = string.Format(Format, value);
+        Label.text = string.Format(Format, value, max);
     }
 }

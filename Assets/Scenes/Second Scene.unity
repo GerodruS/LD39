@@ -656,7 +656,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aed189865d80fb649a3b32017db1206c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Format: 'Drones: {0}'
+  Format: 'Drones: {0}/{1}'
   Label: {fileID: 242631966}
 --- !u!114 &242631965
 MonoBehaviour:
@@ -2002,6 +2002,7 @@ MonoBehaviour:
   Radius: 2
   AbandonButton: {fileID: 1439691745}
   DronesCountRemain: 3
+  DronesCountMax: 0
   OnGameStart:
     m_PersistentCalls:
       m_Calls:
@@ -2039,7 +2040,8 @@ MonoBehaviour:
   OnDronesCountWasChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Events+Int, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    m_TypeName: Events+IntInt, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
   CurrentDrone: {fileID: 0}
 --- !u!1 &1439691745
 GameObject:

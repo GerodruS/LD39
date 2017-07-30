@@ -82,11 +82,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PowerValue: 5
-  MaxPowerValue: 100
+  MaxPowerValue: 40
   OnPowerLevelChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Events+Int, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    m_TypeName: Events+IntInt, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  Field: {fileID: 0}
+  CurrentPoint:
+    X: 0
+    Y: 0
+  PreviousDirection: 0
 --- !u!212 &212098093348424294
 SpriteRenderer:
   m_ObjectHideFlags: 1

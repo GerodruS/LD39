@@ -6,7 +6,7 @@ public class Drone : MonoBehaviour
     public int PowerValue = 100;
     public int MaxPowerValue = 100;
 
-    public Events.Int OnPowerLevelChanged;
+    public Events.IntInt OnPowerLevelChanged;
     public Field Field;
     public FieldData.Point CurrentPoint;
     public FieldData.Direction PreviousDirection;
@@ -17,7 +17,7 @@ public class Drone : MonoBehaviour
         set
         {
             PowerValue = value;
-            OnPowerLevelChanged.Invoke(PowerValue);
+            OnPowerLevelChanged.Invoke(PowerValue, MaxPowerValue);
         }
     }
 
@@ -32,7 +32,7 @@ public class Drone : MonoBehaviour
         if (powerIndicator != null)
         {
             OnPowerLevelChanged.AddListener(powerIndicator.OnPowerLevelChanged);
-            powerIndicator.OnPowerLevelChanged(PowerValue);
+            powerIndicator.OnPowerLevelChanged(PowerValue, MaxPowerValue);
         }
     }
 

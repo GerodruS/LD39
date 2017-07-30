@@ -12,11 +12,12 @@ public class Field : MonoBehaviour
     public float Radius;
     public GameObject AbandonButton;
     public int DronesCountRemain;
+    public int DronesCountMax;
 
     public Events.Empty OnGameStart;
     public Events.Empty OnGameOver;
     public Events.Empty OnPlayerWasMoved;
-    public Events.Int OnDronesCountWasChanged;
+    public Events.IntInt OnDronesCountWasChanged;
 
     public Drone CurrentDrone;
     int ComboBonus;
@@ -31,7 +32,8 @@ public class Field : MonoBehaviour
     {
         var dronesCount = FindObjectOfType<DronesCount>();
         OnDronesCountWasChanged.AddListener(dronesCount.OnDronesCountWasChanged);
-        dronesCount.OnDronesCountWasChanged(DronesCountRemain);
+        DronesCountMax = DronesCountRemain;
+        dronesCount.OnDronesCountWasChanged(DronesCountRemain, DronesCountMax);
 //        Generate();
         var verticalDistance = VerticalDistance;
         Cells = new Cell[FieldData.Cells.Length];
@@ -224,6 +226,7 @@ public class Field : MonoBehaviour
         if (DronesCountRemain <= 0)
         {
             MoveCameraTo(baseCell.Data.Point.X, baseCell.Data.Point.Y);
+            OnDronesCountWasChanged.Invoke(0, DronesCountMax);
             OnGameOver.Invoke();
             return;
         }
@@ -234,7 +237,7 @@ public class Field : MonoBehaviour
 
         AbandonButton.SetActive(false);
 
+        OnDronesCountWasChanged.Invoke(DronesCountRemain, DronesCountMax);
         --DronesCountRemain;
-        OnDronesCountWasChanged.Invoke(DronesCountRemain);
     }
 }
