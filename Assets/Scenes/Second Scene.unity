@@ -1997,8 +1997,8 @@ MonoBehaviour:
   DronePrefab: {fileID: 114737703253914762, guid: e55845a16c896e247ba5967fbf49e16d,
     type: 2}
   FieldData: {fileID: 11400000, guid: 498c5e91c80219c47b05b18723b9142a, type: 2}
-  Height: 10
-  Width: 20
+  Height: 50
+  Width: 100
   Radius: 2
   AbandonButton: {fileID: 1439691745}
   DronesCountRemain: 3

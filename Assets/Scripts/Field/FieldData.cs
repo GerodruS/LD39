@@ -80,7 +80,7 @@ public class FieldData : ScriptableObject
 
         public CellType Type;
 
-        public CellModificationHolder[] Modificators;
+        public CellModificationHolder[] Modificators = new CellModificationHolder[0];
 
         public new string ToString()
         {
