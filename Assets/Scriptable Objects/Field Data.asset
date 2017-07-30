@@ -26697,7 +26697,8 @@ MonoBehaviour:
     BottomRight: 1
     BottomLeft: 1
     Type: 0
-    Modificators: []
+    Modificators:
+    - {fileID: 11400000, guid: 165fe70226b790d4fac7e31086eba295, type: 2}
   - Point:
       X: -2
       Y: 1
@@ -27236,7 +27237,8 @@ MonoBehaviour:
     BottomRight: 1
     BottomLeft: 1
     Type: 0
-    Modificators: []
+    Modificators:
+    - {fileID: 11400000, guid: 231a9fdba30a367408f57655c33c96a2, type: 2}
   - Point:
       X: -1
       Y: 0
@@ -27247,7 +27249,8 @@ MonoBehaviour:
     BottomRight: 1
     BottomLeft: 1
     Type: 0
-    Modificators: []
+    Modificators:
+    - {fileID: 11400000, guid: 7606e3e51e6ffe14cae0dbc833d583c6, type: 2}
   - Point:
       X: -1
       Y: 1
@@ -28338,7 +28341,8 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 1
     Type: 0
-    Modificators: []
+    Modificators:
+    - {fileID: 11400000, guid: 2884334e9169d8146948431358a053bc, type: 2}
   - Point:
       X: 1
       Y: 0
@@ -28899,7 +28903,8 @@ MonoBehaviour:
     BottomRight: 1
     BottomLeft: 1
     Type: 0
-    Modificators: []
+    Modificators:
+    - {fileID: 11400000, guid: 16fd5ec12a0173542beb96f15e2e7bcb, type: 2}
   - Point:
       X: 2
       Y: 1
