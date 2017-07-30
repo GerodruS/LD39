@@ -23,6 +23,11 @@ public class QuestMaster : MonoBehaviour
     public List<Quest> CompletedQuests;
     public QuestToggle[] TogglesByQuests;
 //    public Events.Empty OnQuestListWasChanged;
+    
+    void Start()
+    {
+        FindObjectOfType<ProgressLabel>().OnQuestsProgressWasChanged(0, QuestsCount);
+    }
 
     public void OnQuestWasCompleted(Quest quest)
     {
@@ -37,6 +42,7 @@ public class QuestMaster : MonoBehaviour
                     elem.Toggle.isOn = true;
                 }
             }
+            FindObjectOfType<ProgressLabel>().OnQuestsProgressWasChanged(CompletedQuests.Count, QuestsCount);
         }
     }
 }

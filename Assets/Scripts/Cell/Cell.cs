@@ -51,6 +51,8 @@ public class Cell : MonoBehaviour
 
     void Discover()
     {
+        if (Curtain.activeSelf)
+            FindObjectOfType<ProgressLabel>().OnCellWasDiscovered();
         Curtain.SetActive(false);
     }
 

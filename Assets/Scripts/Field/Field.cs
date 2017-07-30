@@ -63,6 +63,7 @@ public class Field : MonoBehaviour
             cells.Add(FieldData.Direction.BottomLeft, c.Data.BottomLeft ? GetCell(p.X - 1, p.Y - 0 + offset) : null);
         }
         OnGameStart.Invoke();
+        FindObjectOfType<ProgressLabel>().OnCellProgressWasChanged(0, Cells.Length);
     }
 
     public void AbandonCurrentDrone()
