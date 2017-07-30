@@ -13,6 +13,8 @@ public class Field : MonoBehaviour
     public GameObject AbandonButton;
     public int DronesCountRemain;
 
+    public Events.Empty OnGameStart;
+    public Events.Empty OnGameOver;
     public Events.Empty OnPlayerWasMoved;
     public Events.Int OnDronesCountWasChanged;
 
@@ -60,6 +62,7 @@ public class Field : MonoBehaviour
             cells.Add(FieldData.Direction.BottomRight, c.Data.BottomRight ? GetCell(p.X + 1, p.Y - 0 + offset) : null);
             cells.Add(FieldData.Direction.BottomLeft, c.Data.BottomLeft ? GetCell(p.X - 1, p.Y - 0 + offset) : null);
         }
+        OnGameStart.Invoke();
     }
 
     public void AbandonCurrentDrone()
@@ -210,6 +213,7 @@ public class Field : MonoBehaviour
         if (DronesCountRemain <= 0)
         {
             MoveCameraTo(baseCell.Data.Point.X, baseCell.Data.Point.Y);
+            OnGameOver.Invoke();
             return;
         }
         var newDrone = Instantiate(DronePrefab, transform);
