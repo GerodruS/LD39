@@ -141,6 +141,7 @@ public class Field : MonoBehaviour
         CurrentDrone.transform.localPosition = GetPosition(x, y);
         MoveCameraTo(x, y);
         DronePoint = new FieldData.Point(x, y);
+        GetCell(x, y).OnActivate();
     }
 
     Vector3 GetPosition(int x, int y)
@@ -188,10 +189,9 @@ public class Field : MonoBehaviour
         if (baseCell)
         {
             var newDrone = Instantiate(DronePrefab, transform);
-            newDrone.transform.localPosition = baseCell.transform.localPosition;
             CurrentDrone = newDrone;
             PreviousDirection = FieldData.Direction.None;
-            DronePoint = baseCell.Data.Point;
+            MoveDrone(baseCell.Data.Point.X, baseCell.Data.Point.Y);
         }
     }
 }

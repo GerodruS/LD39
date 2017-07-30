@@ -50,6 +50,9 @@ TagManager:
   - name: Cell Border
     uniqueID: 1818196377
     locked: 0
+  - name: Cell Curtain
+    uniqueID: 1072364833
+    locked: 0
   - name: Drone
     uniqueID: 3351960225
     locked: 0

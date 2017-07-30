@@ -17,6 +17,7 @@ public class Cell : MonoBehaviour
     public Dictionary<FieldData.Direction, Cell> AdjacentCells = new Dictionary<FieldData.Direction, Cell>();
 
     public GameObject BaseIcon;
+    public GameObject Curtain;
 
     public Events.IntInt OnClicked;
 
@@ -31,6 +32,21 @@ public class Cell : MonoBehaviour
     {
 //        print(this);
         OnClicked.Invoke(Data.Point.X, Data.Point.Y);
+    }
+
+    public void OnActivate()
+    {
+        Discover();
+        foreach (var elem in AdjacentCells)
+        {
+            if (elem.Value != null)
+                elem.Value.Discover();
+        }
+    }
+
+    void Discover()
+    {
+        Curtain.SetActive(false);
     }
 
     public void SetData(FieldData.Cell data)
