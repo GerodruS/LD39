@@ -5,14 +5,7 @@ using UnityEngine;
 [ExecuteInEditMode]
 public class Cell : MonoBehaviour
 {
-    public FieldData.Point Point;
-    
-    public bool TopRight;
-    public bool TopLeft;
-    public bool Right;
-    public bool Left;
-    public bool BottomRight;
-    public bool BottomLeft;
+    public FieldData.Cell Data;
 
     public GameObject TopRightBorder;
     public GameObject TopLeftBorder;
@@ -30,25 +23,21 @@ public class Cell : MonoBehaviour
 #if UNITY_EDITOR
     void Update()
     {
-        TopRightBorder.SetActive(TopRight);
-        TopLeftBorder.SetActive(TopLeft);
-        RightBorder.SetActive(Right);
-        LeftBorder.SetActive(Left);
-        BottomRightBorder.SetActive(BottomRight);
-        BottomLeftBorder.SetActive(BottomLeft);
+        RefreshRestrictions();
     }
 #endif
 
     void OnMouseDown()
     {
 //        print(this);
-        OnClicked.Invoke(Point.X, Point.Y);
+        OnClicked.Invoke(Data.Point.X, Data.Point.Y);
     }
 
     public void SetData(FieldData.Cell data)
     {
-        Point = data.Point;
+        Data = data;
         SetType(data.Type);
+        RefreshRestrictions();
     }
 
     void SetType(FieldData.CellType type)
@@ -67,5 +56,15 @@ public class Cell : MonoBehaviour
                 Debug.LogError("SetType");
                 break;
         }
+    }
+
+    void RefreshRestrictions()
+    {
+        TopRightBorder.SetActive(!Data.TopRight);
+        TopLeftBorder.SetActive(!Data.TopLeft);
+        RightBorder.SetActive(!Data.Right);
+        LeftBorder.SetActive(!Data.Left);
+        BottomRightBorder.SetActive(!Data.BottomRight);
+        BottomLeftBorder.SetActive(!Data.BottomLeft);
     }
 }

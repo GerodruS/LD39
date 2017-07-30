@@ -41,14 +41,16 @@ public class Field : MonoBehaviour
         }
         for (int i = 0, n = FieldData.Cells.Length; i < n; ++i)
         {
-            var cell = Cells[i];
-            cell.AdjacentCells.Add(FieldData.Direction.Right, GetCell(cell.Point.X + 2, cell.Point.Y));
-            cell.AdjacentCells.Add(FieldData.Direction.Left, GetCell(cell.Point.X - 2, cell.Point.Y));
-            var offset = 0 == cell.Point.X % 2 ? -1 : 0;
-            cell.AdjacentCells.Add(FieldData.Direction.TopRight, GetCell(cell.Point.X + 1, cell.Point.Y + 1 + offset));
-            cell.AdjacentCells.Add(FieldData.Direction.TopLeft, GetCell(cell.Point.X - 1, cell.Point.Y + 1 + offset));
-            cell.AdjacentCells.Add(FieldData.Direction.BottomRight, GetCell(cell.Point.X + 1, cell.Point.Y - 0 + offset));
-            cell.AdjacentCells.Add(FieldData.Direction.BottomLeft, GetCell(cell.Point.X - 1, cell.Point.Y - 0 + offset));
+            var c = Cells[i];
+            var p = c.Data.Point;
+            var cells = c.AdjacentCells;
+            cells.Add(FieldData.Direction.Right, c.Data.Right ? GetCell(p.X + 2, p.Y) : null);
+            cells.Add(FieldData.Direction.Left, c.Data.Left ? GetCell(p.X - 2, p.Y) : null);
+            var offset = 0 == p.X % 2 ? -1 : 0;
+            cells.Add(FieldData.Direction.TopRight, c.Data.TopRight ? GetCell(p.X + 1, p.Y + 1 + offset) : null);
+            cells.Add(FieldData.Direction.TopLeft, c.Data.TopLeft ? GetCell(p.X - 1, p.Y + 1 + offset) : null);
+            cells.Add(FieldData.Direction.BottomRight, c.Data.BottomRight ? GetCell(p.X + 1, p.Y - 0 + offset) : null);
+            cells.Add(FieldData.Direction.BottomLeft, c.Data.BottomLeft ? GetCell(p.X - 1, p.Y - 0 + offset) : null);
         }
     }
 
@@ -163,7 +165,7 @@ public class Field : MonoBehaviour
             var newDrone = Instantiate(DronePrefab, transform);
             newDrone.transform.localPosition = baseCell.transform.localPosition;
             CurrentDrone = newDrone;
-            DronePoint = baseCell.Point;
+            DronePoint = baseCell.Data.Point;
         }
     }
 }
