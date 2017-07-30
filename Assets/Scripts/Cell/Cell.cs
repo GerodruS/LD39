@@ -4,6 +4,8 @@
 [ExecuteInEditMode]
 public class Cell : MonoBehaviour
 {
+    public FieldData.Point Point;
+    
     public bool TopRight;
     public bool TopLeft;
     public bool Right;
@@ -20,6 +22,8 @@ public class Cell : MonoBehaviour
 
     public GameObject BaseIcon;
 
+    public Events.IntInt OnClicked;
+
 #if UNITY_EDITOR
     void Update()
     {
@@ -32,7 +36,19 @@ public class Cell : MonoBehaviour
     }
 #endif
 
-    public void SetType(FieldData.CellType type)
+    void OnMouseDown()
+    {
+        print(this);
+        OnClicked.Invoke(Point.X, Point.Y);
+    }
+
+    public void SetData(FieldData.Cell data)
+    {
+        Point = data.Point;
+        SetType(data.Type);
+    }
+
+    void SetType(FieldData.CellType type)
     {
         BaseIcon.SetActive(false);
         switch (type)

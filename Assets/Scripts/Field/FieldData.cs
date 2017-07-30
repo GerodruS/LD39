@@ -12,10 +12,16 @@ public class FieldData : ScriptableObject
     }
 
     [Serializable]
-    public class Cell
+    public struct Point
     {
         public int X;
         public int Y;
+    }
+
+    [Serializable]
+    public class Cell
+    {
+        public Point Point;
 
         public bool TopRight;
         public bool TopLeft;
@@ -28,7 +34,7 @@ public class FieldData : ScriptableObject
 
         public new string ToString()
         {
-            return string.Format("{0: 00;-00; 00}   {1: 00;-00; 00}", X, Y);
+            return string.Format("{0: 00;-00; 00}   {1: 00;-00; 00}", Point.X, Point.Y);
         }
     }
 

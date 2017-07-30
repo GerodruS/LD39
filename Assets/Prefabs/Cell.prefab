@@ -130,6 +130,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4638121625591922}
   - component: {fileID: 114437147831885732}
+  - component: {fileID: 58565280959526434}
   m_Layer: 0
   m_Name: Cell
   m_TagString: Untagged
@@ -338,6 +339,21 @@ Transform:
   m_Father: {fileID: 4236310395022640}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+--- !u!58 &58565280959526434
+CircleCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1672724659882038}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 1
 --- !u!114 &114437147831885732
 MonoBehaviour:
   m_ObjectHideFlags: 1
