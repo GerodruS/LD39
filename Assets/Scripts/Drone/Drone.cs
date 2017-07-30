@@ -12,7 +12,10 @@ public class Drone : MonoBehaviour
     {
         var powerIndicator = FindObjectOfType<PowerIndicator>();
         if (powerIndicator != null)
+        {
             OnPowerLevelChanged.AddListener(powerIndicator.OnPowerLevelChanged);
+            powerIndicator.OnPowerLevelChanged(PowerValue);
+        }
     }
 
     void OnDestroy()
@@ -20,6 +23,10 @@ public class Drone : MonoBehaviour
         var powerIndicator = FindObjectOfType<PowerIndicator>();
         if (powerIndicator != null)
             OnPowerLevelChanged.RemoveListener(powerIndicator.OnPowerLevelChanged);
+    }
+
+    public void OnAbandon()
+    {
     }
 
     public int Power

@@ -10,6 +10,7 @@ public class Field : MonoBehaviour
     public int Height;
     public int Width;
     public float Radius;
+    public GameObject AbandonButton;
 
     Drone CurrentDrone;
     FieldData.Point DronePoint;
@@ -54,6 +55,12 @@ public class Field : MonoBehaviour
             cells.Add(FieldData.Direction.BottomRight, c.Data.BottomRight ? GetCell(p.X + 1, p.Y - 0 + offset) : null);
             cells.Add(FieldData.Direction.BottomLeft, c.Data.BottomLeft ? GetCell(p.X - 1, p.Y - 0 + offset) : null);
         }
+    }
+
+    public void AbandonCurrentDrone()
+    {
+        CurrentDrone.OnAbandon();
+        TrySpawnDrone();
     }
 
     void Generate()
@@ -114,6 +121,10 @@ public class Field : MonoBehaviour
                 return;
             }
             CurrentDrone.Power -= cost;
+            if (CurrentDrone.Power < 4)
+            {
+                AbandonButton.SetActive(true);
+            }
             PreviousDirection = elem.Key;
             MoveDrone(x, y);
 //            print(elem.Key);
@@ -193,5 +204,6 @@ public class Field : MonoBehaviour
             PreviousDirection = FieldData.Direction.None;
             MoveDrone(baseCell.Data.Point.X, baseCell.Data.Point.Y);
         }
+        AbandonButton.SetActive(false);
     }
 }
