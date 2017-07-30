@@ -24,6 +24,11 @@ public class Cell : MonoBehaviour
     public Events.Empty OnCellWasActivated;
     public Events.IntInt OnClicked;
 
+//    void Start()
+//    {
+//        Curtain.SetActive(false);
+//    }
+
 #if UNITY_EDITOR
     void Update()
     {
@@ -32,7 +37,7 @@ public class Cell : MonoBehaviour
 
     void OnMouseEnter()
     {
-//        DrawPath();
+        DrawPath();
     }
 
     void OnMouseExit()
@@ -59,20 +64,21 @@ public class Cell : MonoBehaviour
                 Data.BottomRight = open;
             else if (angle <= 0.0f && -5.0f * 180.0f / 6.0f < angle)
                 Data.BottomLeft = open;
-            else 
+            else
                 Data.Left = open;
+            FindObjectOfType<Field>().RefreshDiscover();
         }
-        FindObjectOfType<Field>().RefreshDiscover();
     }
 #endif
 
     void OnMouseDown()
     {
+//        return;
 //        print(this);
         if (!EventSystem.current.IsPointerOverGameObject())
             OnClicked.Invoke(Data.Point.X, Data.Point.Y);
     }
-    
+
     private static float GetAngle(Vector2 v1, Vector2 v2)
     {
         var sign = Mathf.Sign(v1.x * v2.y - v1.y * v2.x);

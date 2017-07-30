@@ -10,6 +10,7 @@ public class QuestMaster : MonoBehaviour
     {
         None,
         SOS,
+        Treasure,
     }
 
     [Serializable]
@@ -19,7 +20,7 @@ public class QuestMaster : MonoBehaviour
         public Toggle Toggle;
     }
 
-    public const int QuestsCount = 1;
+    public const int QuestsCount = 2;
     public List<Quest> CompletedQuests;
     public QuestToggle[] TogglesByQuests;
 //    public Events.Empty OnQuestListWasChanged;

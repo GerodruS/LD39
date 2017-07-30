@@ -26107,9 +26107,9 @@ MonoBehaviour:
   - Point:
       X: -3
       Y: -3
-    TopRight: 0
+    TopRight: 1
     TopLeft: 0
-    Right: 0
+    Right: 1
     Left: 0
     BottomRight: 0
     BottomLeft: 0
@@ -26118,11 +26118,11 @@ MonoBehaviour:
   - Point:
       X: -3
       Y: -2
-    TopRight: 0
+    TopRight: 1
     TopLeft: 0
-    Right: 0
+    Right: 1
     Left: 0
-    BottomRight: 0
+    BottomRight: 1
     BottomLeft: 0
     Type: 0
     Modificators: []
@@ -26668,12 +26668,12 @@ MonoBehaviour:
   - Point:
       X: -2
       Y: -2
-    TopRight: 0
-    TopLeft: 0
+    TopRight: 1
+    TopLeft: 1
     Right: 0
     Left: 0
-    BottomRight: 0
-    BottomLeft: 0
+    BottomRight: 1
+    BottomLeft: 1
     Type: 0
     Modificators: []
   - Point:
@@ -26683,8 +26683,8 @@ MonoBehaviour:
     TopLeft: 1
     Right: 1
     Left: 0
-    BottomRight: 0
-    BottomLeft: 0
+    BottomRight: 1
+    BottomLeft: 1
     Type: 0
     Modificators: []
   - Point:
@@ -27208,22 +27208,22 @@ MonoBehaviour:
       X: -1
       Y: -3
     TopRight: 0
-    TopLeft: 0
+    TopLeft: 1
     Right: 0
-    Left: 0
-    BottomRight: 0
+    Left: 1
+    BottomRight: 1
     BottomLeft: 0
     Type: 0
     Modificators: []
   - Point:
       X: -1
       Y: -2
-    TopRight: 0
-    TopLeft: 0
+    TopRight: 1
+    TopLeft: 1
     Right: 0
-    Left: 0
+    Left: 1
     BottomRight: 0
-    BottomLeft: 0
+    BottomLeft: 1
     Type: 0
     Modificators: []
   - Point:
@@ -27735,7 +27735,7 @@ MonoBehaviour:
   - Point:
       X: 0
       Y: -5
-    TopRight: 0
+    TopRight: 1
     TopLeft: 0
     Right: 0
     Left: 0
@@ -27746,11 +27746,11 @@ MonoBehaviour:
   - Point:
       X: 0
       Y: -4
-    TopRight: 0
+    TopRight: 1
     TopLeft: 0
-    Right: 0
+    Right: 1
     Left: 0
-    BottomRight: 0
+    BottomRight: 1
     BottomLeft: 0
     Type: 0
     Modificators: []
@@ -27758,10 +27758,10 @@ MonoBehaviour:
       X: 0
       Y: -3
     TopRight: 0
-    TopLeft: 0
+    TopLeft: 1
     Right: 0
     Left: 0
-    BottomRight: 0
+    BottomRight: 1
     BottomLeft: 0
     Type: 0
     Modificators: []
@@ -27781,10 +27781,10 @@ MonoBehaviour:
       Y: -1
     TopRight: 1
     TopLeft: 1
-    Right: 1
+    Right: 0
     Left: 1
     BottomRight: 0
-    BottomLeft: 0
+    BottomLeft: 1
     Type: 0
     Modificators: []
   - Point:
@@ -27859,7 +27859,7 @@ MonoBehaviour:
       Y: 6
     TopRight: 0
     TopLeft: 0
-    Right: 0
+    Right: 1
     Left: 1
     BottomRight: 1
     BottomLeft: 1
@@ -28287,23 +28287,23 @@ MonoBehaviour:
   - Point:
       X: 1
       Y: -5
-    TopRight: 0
-    TopLeft: 0
-    Right: 0
+    TopRight: 1
+    TopLeft: 1
+    Right: 1
     Left: 0
     BottomRight: 0
-    BottomLeft: 0
+    BottomLeft: 1
     Type: 0
     Modificators: []
   - Point:
       X: 1
       Y: -4
-    TopRight: 0
-    TopLeft: 0
+    TopRight: 1
+    TopLeft: 1
     Right: 0
     Left: 0
-    BottomRight: 0
-    BottomLeft: 0
+    BottomRight: 1
+    BottomLeft: 1
     Type: 0
     Modificators: []
   - Point:
@@ -28335,7 +28335,7 @@ MonoBehaviour:
     TopLeft: 1
     Right: 1
     Left: 1
-    BottomRight: 1
+    BottomRight: 0
     BottomLeft: 1
     Type: 0
     Modificators: []
@@ -28397,501 +28397,6 @@ MonoBehaviour:
   - Point:
       X: 1
       Y: 5
-    TopRight: 0
-    TopLeft: 1
-    Right: 1
-    Left: 1
-    BottomRight: 1
-    BottomLeft: 1
-    Type: 0
-    Modificators: []
-  - Point:
-      X: 1
-      Y: 6
-    TopRight: 0
-    TopLeft: 0
-    Right: 0
-    Left: 0
-    BottomRight: 0
-    BottomLeft: 0
-    Type: 0
-    Modificators: []
-  - Point:
-      X: 1
-      Y: 7
-    TopRight: 0
-    TopLeft: 0
-    Right: 0
-    Left: 0
-    BottomRight: 0
-    BottomLeft: 0
-    Type: 0
-    Modificators: []
-  - Point:
-      X: 1
-      Y: 8
-    TopRight: 0
-    TopLeft: 0
-    Right: 0
-    Left: 0
-    BottomRight: 0
-    BottomLeft: 0
-    Type: 0
-    Modificators: []
-  - Point:
-      X: 1
-      Y: 9
-    TopRight: 0
-    TopLeft: 0
-    Right: 0
-    Left: 0
-    BottomRight: 0
-    BottomLeft: 0
-    Type: 0
-    Modificators: []
-  - Point:
-      X: 1
-      Y: 10
-    TopRight: 0
-    TopLeft: 0
-    Right: 0
-    Left: 0
-    BottomRight: 0
-    BottomLeft: 0
-    Type: 0
-    Modificators: []
-  - Point:
-      X: 1
-      Y: 11
-    TopRight: 0
-    TopLeft: 0
-    Right: 0
-    Left: 0
-    BottomRight: 0
-    BottomLeft: 0
-    Type: 0
-    Modificators: []
-  - Point:
-      X: 1
-      Y: 12
-    TopRight: 0
-    TopLeft: 0
-    Right: 0
-    Left: 0
-    BottomRight: 0
-    BottomLeft: 0
-    Type: 0
-    Modificators: []
-  - Point:
-      X: 1
-      Y: 13
-    TopRight: 0
-    TopLeft: 0
-    Right: 0
-    Left: 0
-    BottomRight: 0
-    BottomLeft: 0
-    Type: 0
-    Modificators: []
-  - Point:
-      X: 1
-      Y: 14
-    TopRight: 0
-    TopLeft: 0
-    Right: 0
-    Left: 0
-    BottomRight: 0
-    BottomLeft: 0
-    Type: 0
-    Modificators: []
-  - Point:
-      X: 1
-      Y: 15
-    TopRight: 0
-    TopLeft: 0
-    Right: 0
-    Left: 0
-    BottomRight: 0
-    BottomLeft: 0
-    Type: 0
-    Modificators: []
-  - Point:
-      X: 1
-      Y: 16
-    TopRight: 0
-    TopLeft: 0
-    Right: 0
-    Left: 0
-    BottomRight: 0
-    BottomLeft: 0
-    Type: 0
-    Modificators: []
-  - Point:
-      X: 1
-      Y: 17
-    TopRight: 0
-    TopLeft: 0
-    Right: 0
-    Left: 0
-    BottomRight: 0
-    BottomLeft: 0
-    Type: 0
-    Modificators: []
-  - Point:
-      X: 1
-      Y: 18
-    TopRight: 0
-    TopLeft: 0
-    Right: 0
-    Left: 0
-    BottomRight: 0
-    BottomLeft: 0
-    Type: 0
-    Modificators: []
-  - Point:
-      X: 1
-      Y: 19
-    TopRight: 0
-    TopLeft: 0
-    Right: 0
-    Left: 0
-    BottomRight: 0
-    BottomLeft: 0
-    Type: 0
-    Modificators: []
-  - Point:
-      X: 1
-      Y: 20
-    TopRight: 0
-    TopLeft: 0
-    Right: 0
-    Left: 0
-    BottomRight: 0
-    BottomLeft: 0
-    Type: 0
-    Modificators: []
-  - Point:
-      X: 1
-      Y: 21
-    TopRight: 0
-    TopLeft: 0
-    Right: 0
-    Left: 0
-    BottomRight: 0
-    BottomLeft: 0
-    Type: 0
-    Modificators: []
-  - Point:
-      X: 1
-      Y: 22
-    TopRight: 0
-    TopLeft: 0
-    Right: 0
-    Left: 0
-    BottomRight: 0
-    BottomLeft: 0
-    Type: 0
-    Modificators: []
-  - Point:
-      X: 1
-      Y: 23
-    TopRight: 0
-    TopLeft: 0
-    Right: 0
-    Left: 0
-    BottomRight: 0
-    BottomLeft: 0
-    Type: 0
-    Modificators: []
-  - Point:
-      X: 1
-      Y: 24
-    TopRight: 0
-    TopLeft: 0
-    Right: 0
-    Left: 0
-    BottomRight: 0
-    BottomLeft: 0
-    Type: 0
-    Modificators: []
-  - Point:
-      X: 2
-      Y: -25
-    TopRight: 0
-    TopLeft: 0
-    Right: 0
-    Left: 0
-    BottomRight: 0
-    BottomLeft: 0
-    Type: 0
-    Modificators: []
-  - Point:
-      X: 2
-      Y: -24
-    TopRight: 0
-    TopLeft: 0
-    Right: 0
-    Left: 0
-    BottomRight: 0
-    BottomLeft: 0
-    Type: 0
-    Modificators: []
-  - Point:
-      X: 2
-      Y: -23
-    TopRight: 0
-    TopLeft: 0
-    Right: 0
-    Left: 0
-    BottomRight: 0
-    BottomLeft: 0
-    Type: 0
-    Modificators: []
-  - Point:
-      X: 2
-      Y: -22
-    TopRight: 0
-    TopLeft: 0
-    Right: 0
-    Left: 0
-    BottomRight: 0
-    BottomLeft: 0
-    Type: 0
-    Modificators: []
-  - Point:
-      X: 2
-      Y: -21
-    TopRight: 0
-    TopLeft: 0
-    Right: 0
-    Left: 0
-    BottomRight: 0
-    BottomLeft: 0
-    Type: 0
-    Modificators: []
-  - Point:
-      X: 2
-      Y: -20
-    TopRight: 0
-    TopLeft: 0
-    Right: 0
-    Left: 0
-    BottomRight: 0
-    BottomLeft: 0
-    Type: 0
-    Modificators: []
-  - Point:
-      X: 2
-      Y: -19
-    TopRight: 0
-    TopLeft: 0
-    Right: 0
-    Left: 0
-    BottomRight: 0
-    BottomLeft: 0
-    Type: 0
-    Modificators: []
-  - Point:
-      X: 2
-      Y: -18
-    TopRight: 0
-    TopLeft: 0
-    Right: 0
-    Left: 0
-    BottomRight: 0
-    BottomLeft: 0
-    Type: 0
-    Modificators: []
-  - Point:
-      X: 2
-      Y: -17
-    TopRight: 0
-    TopLeft: 0
-    Right: 0
-    Left: 0
-    BottomRight: 0
-    BottomLeft: 0
-    Type: 0
-    Modificators: []
-  - Point:
-      X: 2
-      Y: -16
-    TopRight: 0
-    TopLeft: 0
-    Right: 0
-    Left: 0
-    BottomRight: 0
-    BottomLeft: 0
-    Type: 0
-    Modificators: []
-  - Point:
-      X: 2
-      Y: -15
-    TopRight: 0
-    TopLeft: 0
-    Right: 0
-    Left: 0
-    BottomRight: 0
-    BottomLeft: 0
-    Type: 0
-    Modificators: []
-  - Point:
-      X: 2
-      Y: -14
-    TopRight: 0
-    TopLeft: 0
-    Right: 0
-    Left: 0
-    BottomRight: 0
-    BottomLeft: 0
-    Type: 0
-    Modificators: []
-  - Point:
-      X: 2
-      Y: -13
-    TopRight: 0
-    TopLeft: 0
-    Right: 0
-    Left: 0
-    BottomRight: 0
-    BottomLeft: 0
-    Type: 0
-    Modificators: []
-  - Point:
-      X: 2
-      Y: -12
-    TopRight: 0
-    TopLeft: 0
-    Right: 0
-    Left: 0
-    BottomRight: 0
-    BottomLeft: 0
-    Type: 0
-    Modificators: []
-  - Point:
-      X: 2
-      Y: -11
-    TopRight: 0
-    TopLeft: 0
-    Right: 0
-    Left: 0
-    BottomRight: 0
-    BottomLeft: 0
-    Type: 0
-    Modificators: []
-  - Point:
-      X: 2
-      Y: -10
-    TopRight: 0
-    TopLeft: 0
-    Right: 0
-    Left: 0
-    BottomRight: 0
-    BottomLeft: 0
-    Type: 0
-    Modificators: []
-  - Point:
-      X: 2
-      Y: -9
-    TopRight: 0
-    TopLeft: 0
-    Right: 0
-    Left: 0
-    BottomRight: 0
-    BottomLeft: 0
-    Type: 0
-    Modificators: []
-  - Point:
-      X: 2
-      Y: -8
-    TopRight: 0
-    TopLeft: 0
-    Right: 0
-    Left: 0
-    BottomRight: 0
-    BottomLeft: 0
-    Type: 0
-    Modificators: []
-  - Point:
-      X: 2
-      Y: -7
-    TopRight: 0
-    TopLeft: 0
-    Right: 0
-    Left: 0
-    BottomRight: 0
-    BottomLeft: 0
-    Type: 0
-    Modificators: []
-  - Point:
-      X: 2
-      Y: -6
-    TopRight: 0
-    TopLeft: 0
-    Right: 0
-    Left: 0
-    BottomRight: 0
-    BottomLeft: 0
-    Type: 0
-    Modificators: []
-  - Point:
-      X: 2
-      Y: -5
-    TopRight: 0
-    TopLeft: 0
-    Right: 0
-    Left: 0
-    BottomRight: 0
-    BottomLeft: 0
-    Type: 0
-    Modificators: []
-  - Point:
-      X: 2
-      Y: -4
-    TopRight: 0
-    TopLeft: 0
-    Right: 0
-    Left: 0
-    BottomRight: 0
-    BottomLeft: 0
-    Type: 0
-    Modificators: []
-  - Point:
-      X: 2
-      Y: -3
-    TopRight: 0
-    TopLeft: 0
-    Right: 0
-    Left: 0
-    BottomRight: 0
-    BottomLeft: 0
-    Type: 0
-    Modificators: []
-  - Point:
-      X: 2
-      Y: -2
-    TopRight: 0
-    TopLeft: 0
-    Right: 0
-    Left: 0
-    BottomRight: 0
-    BottomLeft: 0
-    Type: 0
-    Modificators: []
-  - Point:
-      X: 2
-      Y: -1
-    TopRight: 1
-    TopLeft: 1
-    Right: 0
-    Left: 1
-    BottomRight: 0
-    BottomLeft: 0
-    Type: 0
-    Modificators: []
-  - Point:
-      X: 2
-      Y: 0
     TopRight: 1
     TopLeft: 1
     Right: 1
@@ -28901,6 +28406,501 @@ MonoBehaviour:
     Type: 0
     Modificators: []
   - Point:
+      X: 1
+      Y: 6
+    TopRight: 0
+    TopLeft: 0
+    Right: 0
+    Left: 0
+    BottomRight: 0
+    BottomLeft: 0
+    Type: 0
+    Modificators: []
+  - Point:
+      X: 1
+      Y: 7
+    TopRight: 0
+    TopLeft: 0
+    Right: 0
+    Left: 0
+    BottomRight: 0
+    BottomLeft: 0
+    Type: 0
+    Modificators: []
+  - Point:
+      X: 1
+      Y: 8
+    TopRight: 0
+    TopLeft: 0
+    Right: 0
+    Left: 0
+    BottomRight: 0
+    BottomLeft: 0
+    Type: 0
+    Modificators: []
+  - Point:
+      X: 1
+      Y: 9
+    TopRight: 0
+    TopLeft: 0
+    Right: 0
+    Left: 0
+    BottomRight: 0
+    BottomLeft: 0
+    Type: 0
+    Modificators: []
+  - Point:
+      X: 1
+      Y: 10
+    TopRight: 0
+    TopLeft: 0
+    Right: 0
+    Left: 0
+    BottomRight: 0
+    BottomLeft: 0
+    Type: 0
+    Modificators: []
+  - Point:
+      X: 1
+      Y: 11
+    TopRight: 0
+    TopLeft: 0
+    Right: 0
+    Left: 0
+    BottomRight: 0
+    BottomLeft: 0
+    Type: 0
+    Modificators: []
+  - Point:
+      X: 1
+      Y: 12
+    TopRight: 0
+    TopLeft: 0
+    Right: 0
+    Left: 0
+    BottomRight: 0
+    BottomLeft: 0
+    Type: 0
+    Modificators: []
+  - Point:
+      X: 1
+      Y: 13
+    TopRight: 0
+    TopLeft: 0
+    Right: 0
+    Left: 0
+    BottomRight: 0
+    BottomLeft: 0
+    Type: 0
+    Modificators: []
+  - Point:
+      X: 1
+      Y: 14
+    TopRight: 0
+    TopLeft: 0
+    Right: 0
+    Left: 0
+    BottomRight: 0
+    BottomLeft: 0
+    Type: 0
+    Modificators: []
+  - Point:
+      X: 1
+      Y: 15
+    TopRight: 0
+    TopLeft: 0
+    Right: 0
+    Left: 0
+    BottomRight: 0
+    BottomLeft: 0
+    Type: 0
+    Modificators: []
+  - Point:
+      X: 1
+      Y: 16
+    TopRight: 0
+    TopLeft: 0
+    Right: 0
+    Left: 0
+    BottomRight: 0
+    BottomLeft: 0
+    Type: 0
+    Modificators: []
+  - Point:
+      X: 1
+      Y: 17
+    TopRight: 0
+    TopLeft: 0
+    Right: 0
+    Left: 0
+    BottomRight: 0
+    BottomLeft: 0
+    Type: 0
+    Modificators: []
+  - Point:
+      X: 1
+      Y: 18
+    TopRight: 0
+    TopLeft: 0
+    Right: 0
+    Left: 0
+    BottomRight: 0
+    BottomLeft: 0
+    Type: 0
+    Modificators: []
+  - Point:
+      X: 1
+      Y: 19
+    TopRight: 0
+    TopLeft: 0
+    Right: 0
+    Left: 0
+    BottomRight: 0
+    BottomLeft: 0
+    Type: 0
+    Modificators: []
+  - Point:
+      X: 1
+      Y: 20
+    TopRight: 0
+    TopLeft: 0
+    Right: 0
+    Left: 0
+    BottomRight: 0
+    BottomLeft: 0
+    Type: 0
+    Modificators: []
+  - Point:
+      X: 1
+      Y: 21
+    TopRight: 0
+    TopLeft: 0
+    Right: 0
+    Left: 0
+    BottomRight: 0
+    BottomLeft: 0
+    Type: 0
+    Modificators: []
+  - Point:
+      X: 1
+      Y: 22
+    TopRight: 0
+    TopLeft: 0
+    Right: 0
+    Left: 0
+    BottomRight: 0
+    BottomLeft: 0
+    Type: 0
+    Modificators: []
+  - Point:
+      X: 1
+      Y: 23
+    TopRight: 0
+    TopLeft: 0
+    Right: 0
+    Left: 0
+    BottomRight: 0
+    BottomLeft: 0
+    Type: 0
+    Modificators: []
+  - Point:
+      X: 1
+      Y: 24
+    TopRight: 0
+    TopLeft: 0
+    Right: 0
+    Left: 0
+    BottomRight: 0
+    BottomLeft: 0
+    Type: 0
+    Modificators: []
+  - Point:
+      X: 2
+      Y: -25
+    TopRight: 0
+    TopLeft: 0
+    Right: 0
+    Left: 0
+    BottomRight: 0
+    BottomLeft: 0
+    Type: 0
+    Modificators: []
+  - Point:
+      X: 2
+      Y: -24
+    TopRight: 0
+    TopLeft: 0
+    Right: 0
+    Left: 0
+    BottomRight: 0
+    BottomLeft: 0
+    Type: 0
+    Modificators: []
+  - Point:
+      X: 2
+      Y: -23
+    TopRight: 0
+    TopLeft: 0
+    Right: 0
+    Left: 0
+    BottomRight: 0
+    BottomLeft: 0
+    Type: 0
+    Modificators: []
+  - Point:
+      X: 2
+      Y: -22
+    TopRight: 0
+    TopLeft: 0
+    Right: 0
+    Left: 0
+    BottomRight: 0
+    BottomLeft: 0
+    Type: 0
+    Modificators: []
+  - Point:
+      X: 2
+      Y: -21
+    TopRight: 0
+    TopLeft: 0
+    Right: 0
+    Left: 0
+    BottomRight: 0
+    BottomLeft: 0
+    Type: 0
+    Modificators: []
+  - Point:
+      X: 2
+      Y: -20
+    TopRight: 0
+    TopLeft: 0
+    Right: 0
+    Left: 0
+    BottomRight: 0
+    BottomLeft: 0
+    Type: 0
+    Modificators: []
+  - Point:
+      X: 2
+      Y: -19
+    TopRight: 0
+    TopLeft: 0
+    Right: 0
+    Left: 0
+    BottomRight: 0
+    BottomLeft: 0
+    Type: 0
+    Modificators: []
+  - Point:
+      X: 2
+      Y: -18
+    TopRight: 0
+    TopLeft: 0
+    Right: 0
+    Left: 0
+    BottomRight: 0
+    BottomLeft: 0
+    Type: 0
+    Modificators: []
+  - Point:
+      X: 2
+      Y: -17
+    TopRight: 0
+    TopLeft: 0
+    Right: 0
+    Left: 0
+    BottomRight: 0
+    BottomLeft: 0
+    Type: 0
+    Modificators: []
+  - Point:
+      X: 2
+      Y: -16
+    TopRight: 0
+    TopLeft: 0
+    Right: 0
+    Left: 0
+    BottomRight: 0
+    BottomLeft: 0
+    Type: 0
+    Modificators: []
+  - Point:
+      X: 2
+      Y: -15
+    TopRight: 0
+    TopLeft: 0
+    Right: 0
+    Left: 0
+    BottomRight: 0
+    BottomLeft: 0
+    Type: 0
+    Modificators: []
+  - Point:
+      X: 2
+      Y: -14
+    TopRight: 0
+    TopLeft: 0
+    Right: 0
+    Left: 0
+    BottomRight: 0
+    BottomLeft: 0
+    Type: 0
+    Modificators: []
+  - Point:
+      X: 2
+      Y: -13
+    TopRight: 0
+    TopLeft: 0
+    Right: 0
+    Left: 0
+    BottomRight: 0
+    BottomLeft: 0
+    Type: 0
+    Modificators: []
+  - Point:
+      X: 2
+      Y: -12
+    TopRight: 0
+    TopLeft: 0
+    Right: 0
+    Left: 0
+    BottomRight: 0
+    BottomLeft: 0
+    Type: 0
+    Modificators: []
+  - Point:
+      X: 2
+      Y: -11
+    TopRight: 0
+    TopLeft: 0
+    Right: 0
+    Left: 0
+    BottomRight: 0
+    BottomLeft: 0
+    Type: 0
+    Modificators: []
+  - Point:
+      X: 2
+      Y: -10
+    TopRight: 0
+    TopLeft: 0
+    Right: 0
+    Left: 0
+    BottomRight: 0
+    BottomLeft: 0
+    Type: 0
+    Modificators: []
+  - Point:
+      X: 2
+      Y: -9
+    TopRight: 0
+    TopLeft: 0
+    Right: 0
+    Left: 0
+    BottomRight: 0
+    BottomLeft: 0
+    Type: 0
+    Modificators: []
+  - Point:
+      X: 2
+      Y: -8
+    TopRight: 0
+    TopLeft: 0
+    Right: 0
+    Left: 0
+    BottomRight: 0
+    BottomLeft: 0
+    Type: 0
+    Modificators: []
+  - Point:
+      X: 2
+      Y: -7
+    TopRight: 0
+    TopLeft: 0
+    Right: 0
+    Left: 0
+    BottomRight: 0
+    BottomLeft: 0
+    Type: 0
+    Modificators: []
+  - Point:
+      X: 2
+      Y: -6
+    TopRight: 0
+    TopLeft: 0
+    Right: 0
+    Left: 0
+    BottomRight: 0
+    BottomLeft: 0
+    Type: 0
+    Modificators: []
+  - Point:
+      X: 2
+      Y: -5
+    TopRight: 0
+    TopLeft: 0
+    Right: 0
+    Left: 0
+    BottomRight: 0
+    BottomLeft: 0
+    Type: 0
+    Modificators: []
+  - Point:
+      X: 2
+      Y: -4
+    TopRight: 0
+    TopLeft: 1
+    Right: 1
+    Left: 1
+    BottomRight: 1
+    BottomLeft: 1
+    Type: 0
+    Modificators: []
+  - Point:
+      X: 2
+      Y: -3
+    TopRight: 1
+    TopLeft: 0
+    Right: 0
+    Left: 0
+    BottomRight: 0
+    BottomLeft: 1
+    Type: 0
+    Modificators: []
+  - Point:
+      X: 2
+      Y: -2
+    TopRight: 1
+    TopLeft: 0
+    Right: 1
+    Left: 0
+    BottomRight: 1
+    BottomLeft: 0
+    Type: 0
+    Modificators: []
+  - Point:
+      X: 2
+      Y: -1
+    TopRight: 0
+    TopLeft: 0
+    Right: 0
+    Left: 0
+    BottomRight: 0
+    BottomLeft: 0
+    Type: 0
+    Modificators: []
+  - Point:
+      X: 2
+      Y: 0
+    TopRight: 1
+    TopLeft: 1
+    Right: 1
+    Left: 1
+    BottomRight: 1
+    BottomLeft: 1
+    Type: 0
+    Modificators: []
+  - Point:
       X: 2
       Y: 1
     TopRight: 0
@@ -28961,9 +28961,9 @@ MonoBehaviour:
     TopRight: 0
     TopLeft: 0
     Right: 0
-    Left: 0
-    BottomRight: 0
-    BottomLeft: 0
+    Left: 1
+    BottomRight: 1
+    BottomLeft: 1
     Type: 0
     Modificators: []
   - Point:
@@ -29376,9 +29376,9 @@ MonoBehaviour:
   - Point:
       X: 3
       Y: -6
-    TopRight: 0
+    TopRight: 1
     TopLeft: 0
-    Right: 0
+    Right: 1
     Left: 0
     BottomRight: 0
     BottomLeft: 0
@@ -29387,11 +29387,11 @@ MonoBehaviour:
   - Point:
       X: 3
       Y: -5
-    TopRight: 0
-    TopLeft: 0
-    Right: 0
-    Left: 0
-    BottomRight: 0
+    TopRight: 1
+    TopLeft: 1
+    Right: 1
+    Left: 1
+    BottomRight: 1
     BottomLeft: 0
     Type: 0
     Modificators: []
@@ -29409,23 +29409,23 @@ MonoBehaviour:
   - Point:
       X: 3
       Y: -3
-    TopRight: 0
-    TopLeft: 0
-    Right: 0
+    TopRight: 1
+    TopLeft: 1
+    Right: 1
     Left: 0
     BottomRight: 0
-    BottomLeft: 0
+    BottomLeft: 1
     Type: 0
     Modificators: []
   - Point:
       X: 3
       Y: -2
-    TopRight: 0
+    TopRight: 1
     TopLeft: 0
     Right: 0
     Left: 0
-    BottomRight: 0
-    BottomLeft: 0
+    BottomRight: 1
+    BottomLeft: 1
     Type: 0
     Modificators: []
   - Point:
@@ -29435,8 +29435,8 @@ MonoBehaviour:
     TopLeft: 1
     Right: 0
     Left: 1
-    BottomRight: 0
-    BottomLeft: 1
+    BottomRight: 1
+    BottomLeft: 0
     Type: 0
     Modificators: []
   - Point:
@@ -29498,7 +29498,7 @@ MonoBehaviour:
       X: 3
       Y: 5
     TopRight: 0
-    TopLeft: 0
+    TopLeft: 1
     Right: 0
     Left: 1
     BottomRight: 0
@@ -29937,12 +29937,12 @@ MonoBehaviour:
   - Point:
       X: 4
       Y: -5
-    TopRight: 0
-    TopLeft: 0
-    Right: 0
+    TopRight: 1
+    TopLeft: 1
+    Right: 1
     Left: 0
-    BottomRight: 0
-    BottomLeft: 0
+    BottomRight: 1
+    BottomLeft: 1
     Type: 0
     Modificators: []
   - Point:
@@ -29951,9 +29951,9 @@ MonoBehaviour:
     TopRight: 0
     TopLeft: 0
     Right: 0
-    Left: 0
-    BottomRight: 0
-    BottomLeft: 0
+    Left: 1
+    BottomRight: 1
+    BottomLeft: 1
     Type: 0
     Modificators: []
   - Point:
@@ -29971,22 +29971,22 @@ MonoBehaviour:
       X: 4
       Y: -2
     TopRight: 0
-    TopLeft: 0
+    TopLeft: 1
     Right: 0
-    Left: 0
-    BottomRight: 0
-    BottomLeft: 0
+    Left: 1
+    BottomRight: 1
+    BottomLeft: 1
     Type: 0
     Modificators: []
   - Point:
       X: 4
       Y: -1
     TopRight: 0
-    TopLeft: 0
+    TopLeft: 1
     Right: 0
     Left: 0
     BottomRight: 0
-    BottomLeft: 0
+    BottomLeft: 1
     Type: 0
     Modificators: []
   - Point:
@@ -30465,9 +30465,9 @@ MonoBehaviour:
   - Point:
       X: 5
       Y: -7
-    TopRight: 0
+    TopRight: 1
     TopLeft: 0
-    Right: 0
+    Right: 1
     Left: 0
     BottomRight: 0
     BottomLeft: 0
@@ -30476,11 +30476,11 @@ MonoBehaviour:
   - Point:
       X: 5
       Y: -6
-    TopRight: 0
-    TopLeft: 0
+    TopRight: 1
+    TopLeft: 1
     Right: 0
-    Left: 0
-    BottomRight: 0
+    Left: 1
+    BottomRight: 1
     BottomLeft: 0
     Type: 0
     Modificators: []
@@ -30488,11 +30488,11 @@ MonoBehaviour:
       X: 5
       Y: -5
     TopRight: 0
-    TopLeft: 0
+    TopLeft: 1
     Right: 0
-    Left: 0
-    BottomRight: 0
-    BottomLeft: 0
+    Left: 1
+    BottomRight: 1
+    BottomLeft: 1
     Type: 0
     Modificators: []
   - Point:
@@ -30510,9 +30510,9 @@ MonoBehaviour:
       X: 5
       Y: -3
     TopRight: 0
-    TopLeft: 0
+    TopLeft: 1
     Right: 0
-    Left: 0
+    Left: 1
     BottomRight: 0
     BottomLeft: 0
     Type: 0
@@ -31019,7 +31019,7 @@ MonoBehaviour:
     TopLeft: 0
     Right: 0
     Left: 0
-    BottomRight: 0
+    BottomRight: 1
     BottomLeft: 0
     Type: 0
     Modificators: []
@@ -31027,22 +31027,23 @@ MonoBehaviour:
       X: 6
       Y: -6
     TopRight: 0
-    TopLeft: 0
-    Right: 0
+    TopLeft: 1
+    Right: 1
     Left: 0
-    BottomRight: 0
-    BottomLeft: 0
+    BottomRight: 1
+    BottomLeft: 1
     Type: 0
-    Modificators: []
+    Modificators:
+    - {fileID: 11400000, guid: a05b3fac35fcaf34e92c61e835de4c3a, type: 2}
   - Point:
       X: 6
       Y: -5
     TopRight: 0
-    TopLeft: 0
+    TopLeft: 1
     Right: 0
-    Left: 0
+    Left: 1
     BottomRight: 0
-    BottomLeft: 0
+    BottomLeft: 1
     Type: 0
     Modificators: []
   - Point:
@@ -31554,9 +31555,9 @@ MonoBehaviour:
   - Point:
       X: 7
       Y: -8
-    TopRight: 0
-    TopLeft: 0
-    Right: 0
+    TopRight: 1
+    TopLeft: 1
+    Right: 1
     Left: 0
     BottomRight: 0
     BottomLeft: 0
@@ -31565,10 +31566,10 @@ MonoBehaviour:
   - Point:
       X: 7
       Y: -7
-    TopRight: 0
-    TopLeft: 0
+    TopRight: 1
+    TopLeft: 1
     Right: 0
-    Left: 0
+    Left: 1
     BottomRight: 0
     BottomLeft: 0
     Type: 0
@@ -32115,12 +32116,12 @@ MonoBehaviour:
   - Point:
       X: 8
       Y: -7
-    TopRight: 0
+    TopRight: 1
     TopLeft: 0
-    Right: 0
-    Left: 0
-    BottomRight: 0
-    BottomLeft: 0
+    Right: 1
+    Left: 1
+    BottomRight: 1
+    BottomLeft: 1
     Type: 0
     Modificators: []
   - Point:
@@ -32129,9 +32130,9 @@ MonoBehaviour:
     TopRight: 0
     TopLeft: 0
     Right: 0
-    Left: 0
+    Left: 1
     BottomRight: 0
-    BottomLeft: 0
+    BottomLeft: 1
     Type: 0
     Modificators: []
   - Point:
@@ -32654,10 +32655,10 @@ MonoBehaviour:
   - Point:
       X: 9
       Y: -8
-    TopRight: 0
-    TopLeft: 0
+    TopRight: 1
+    TopLeft: 1
     Right: 0
-    Left: 0
+    Left: 1
     BottomRight: 0
     BottomLeft: 0
     Type: 0
@@ -32669,7 +32670,7 @@ MonoBehaviour:
     TopLeft: 0
     Right: 0
     Left: 0
-    BottomRight: 0
+    BottomRight: 1
     BottomLeft: 0
     Type: 0
     Modificators: []
@@ -33216,11 +33217,11 @@ MonoBehaviour:
       X: 10
       Y: -7
     TopRight: 0
-    TopLeft: 0
+    TopLeft: 1
     Right: 0
-    Left: 0
+    Left: 1
     BottomRight: 0
-    BottomLeft: 0
+    BottomLeft: 1
     Type: 0
     Modificators: []
   - Point:
