@@ -4,6 +4,7 @@
 public class Field : MonoBehaviour
 {
     public GameObject CellPrefab;
+    public Transform CellParent;
     public Drone DronePrefab;
     public FieldData FieldData;
     public int Height;
@@ -20,6 +21,7 @@ public class Field : MonoBehaviour
 
     void Start()
     {
+//        Generate();
         var verticalDistance = VerticalDistance;
         Cells = new Cell[FieldData.Cells.Length];
         for (int i = 0, n = FieldData.Cells.Length; i < n; ++i)
@@ -28,13 +30,37 @@ public class Field : MonoBehaviour
             var x = cellData.Point.X;
             var y = cellData.Point.Y;
             var offset = 0 == x % 2 ? 0.0f : 0.5f;
-            var cellObject = Instantiate(CellPrefab, transform);
+            var cellObject = Instantiate(CellPrefab, CellParent);
             cellObject.transform.localPosition = new Vector3(x * 0.5f * Radius, (y + offset) * verticalDistance, 0.0f);
             cellObject.name = string.Format("{0: 00;-00; 00}   {1: 00;-00; 00}", x, y);
             var cell = cellObject.GetComponent<Cell>();
             cell.SetData(cellData);
             cell.OnClicked.AddListener(OnCellClicked);
             Cells[i] = cell;
+        }
+    }
+
+    void Generate()
+    {
+        var halfWidth = Width / 2;
+        var halfHeight = Height / 2;
+        FieldData.Cells = new FieldData.Cell[Width * Height];
+        var i = 0;
+        for (var x = -halfWidth; x < halfWidth; ++x)
+        {
+            for (var y = -halfHeight; y < halfHeight; ++y)
+            {
+                var newCell = new FieldData.Cell
+                {
+                    Point =
+                    {
+                        X = x,
+                        Y = y
+                    }
+                };
+                FieldData.Cells[i] = newCell;
+                ++i;
+            }
         }
     }
 
@@ -48,6 +74,38 @@ public class Field : MonoBehaviour
 
     void TryMoveDrone(int x, int y)
     {
+        CurrentDrone.transform.localPosition = GetPosition(x, y);
+        MoveCameraTo(x, y);
+    }
+
+    Vector3 GetPosition(int x, int y)
+    {
+        var cell = GetCell(x, y);
+        return cell != null ? cell.transform.localPosition : Vector3.zero;
+    }
+
+    Cell GetCell(int x, int y)
+    {
+        for (int i = 0, n = FieldData.Cells.Length; i < n; ++i)
+        {
+            var cellData = FieldData.Cells[i];
+            if (cellData.Point.X == x && cellData.Point.Y == y)
+            {
+                return Cells[i];
+            }
+        }
+        return null;
+    }
+
+    void MoveCameraTo(int x, int y)
+    {
+        var cell = GetCell(x, y);
+        var cellPosition = cell != null ? cell.transform.position : Vector3.zero;
+        var mainCamera = Camera.main;
+        var position = mainCamera.transform.position;
+        position.x = cellPosition.x;
+        position.y = cellPosition.y;
+        mainCamera.transform.position = position;
     }
 
     void TrySpawnDrone()

@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Name: Field Data
   m_EditorClassIdentifier: 
   Cells:
-  - X: -10
-    Y: -5
+  - Point:
+      X: -10
+      Y: -5
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -21,8 +22,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: -10
-    Y: -4
+  - Point:
+      X: -10
+      Y: -4
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -30,8 +32,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: -10
-    Y: -3
+  - Point:
+      X: -10
+      Y: -3
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -39,8 +42,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: -10
-    Y: -2
+  - Point:
+      X: -10
+      Y: -2
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -48,8 +52,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: -10
-    Y: -1
+  - Point:
+      X: -10
+      Y: -1
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -57,8 +62,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: -10
-    Y: 0
+  - Point:
+      X: -10
+      Y: 0
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -66,8 +72,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: -10
-    Y: 1
+  - Point:
+      X: -10
+      Y: 1
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -75,8 +82,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: -10
-    Y: 2
+  - Point:
+      X: -10
+      Y: 2
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -84,8 +92,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: -10
-    Y: 3
+  - Point:
+      X: -10
+      Y: 3
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -93,8 +102,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: -10
-    Y: 4
+  - Point:
+      X: -10
+      Y: 4
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -102,8 +112,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: -9
-    Y: -5
+  - Point:
+      X: -9
+      Y: -5
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -111,8 +122,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: -9
-    Y: -4
+  - Point:
+      X: -9
+      Y: -4
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -120,8 +132,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: -9
-    Y: -3
+  - Point:
+      X: -9
+      Y: -3
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -129,8 +142,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: -9
-    Y: -2
+  - Point:
+      X: -9
+      Y: -2
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -138,8 +152,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: -9
-    Y: -1
+  - Point:
+      X: -9
+      Y: -1
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -147,8 +162,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: -9
-    Y: 0
+  - Point:
+      X: -9
+      Y: 0
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -156,8 +172,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: -9
-    Y: 1
+  - Point:
+      X: -9
+      Y: 1
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -165,8 +182,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: -9
-    Y: 2
+  - Point:
+      X: -9
+      Y: 2
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -174,8 +192,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: -9
-    Y: 3
+  - Point:
+      X: -9
+      Y: 3
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -183,8 +202,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: -9
-    Y: 4
+  - Point:
+      X: -9
+      Y: 4
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -192,8 +212,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: -8
-    Y: -5
+  - Point:
+      X: -8
+      Y: -5
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -201,8 +222,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: -8
-    Y: -4
+  - Point:
+      X: -8
+      Y: -4
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -210,8 +232,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: -8
-    Y: -3
+  - Point:
+      X: -8
+      Y: -3
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -219,8 +242,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: -8
-    Y: -2
+  - Point:
+      X: -8
+      Y: -2
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -228,8 +252,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: -8
-    Y: -1
+  - Point:
+      X: -8
+      Y: -1
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -237,8 +262,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: -8
-    Y: 0
+  - Point:
+      X: -8
+      Y: 0
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -246,8 +272,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: -8
-    Y: 1
+  - Point:
+      X: -8
+      Y: 1
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -255,8 +282,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: -8
-    Y: 2
+  - Point:
+      X: -8
+      Y: 2
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -264,8 +292,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: -8
-    Y: 3
+  - Point:
+      X: -8
+      Y: 3
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -273,8 +302,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: -8
-    Y: 4
+  - Point:
+      X: -8
+      Y: 4
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -282,8 +312,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: -7
-    Y: -5
+  - Point:
+      X: -7
+      Y: -5
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -291,8 +322,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: -7
-    Y: -4
+  - Point:
+      X: -7
+      Y: -4
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -300,8 +332,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: -7
-    Y: -3
+  - Point:
+      X: -7
+      Y: -3
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -309,8 +342,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: -7
-    Y: -2
+  - Point:
+      X: -7
+      Y: -2
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -318,8 +352,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: -7
-    Y: -1
+  - Point:
+      X: -7
+      Y: -1
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -327,8 +362,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: -7
-    Y: 0
+  - Point:
+      X: -7
+      Y: 0
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -336,8 +372,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: -7
-    Y: 1
+  - Point:
+      X: -7
+      Y: 1
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -345,8 +382,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: -7
-    Y: 2
+  - Point:
+      X: -7
+      Y: 2
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -354,8 +392,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: -7
-    Y: 3
+  - Point:
+      X: -7
+      Y: 3
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -363,8 +402,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: -7
-    Y: 4
+  - Point:
+      X: -7
+      Y: 4
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -372,8 +412,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: -6
-    Y: -5
+  - Point:
+      X: -6
+      Y: -5
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -381,8 +422,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: -6
-    Y: -4
+  - Point:
+      X: -6
+      Y: -4
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -390,8 +432,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: -6
-    Y: -3
+  - Point:
+      X: -6
+      Y: -3
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -399,8 +442,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: -6
-    Y: -2
+  - Point:
+      X: -6
+      Y: -2
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -408,8 +452,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: -6
-    Y: -1
+  - Point:
+      X: -6
+      Y: -1
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -417,8 +462,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: -6
-    Y: 0
+  - Point:
+      X: -6
+      Y: 0
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -426,8 +472,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: -6
-    Y: 1
+  - Point:
+      X: -6
+      Y: 1
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -435,8 +482,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: -6
-    Y: 2
+  - Point:
+      X: -6
+      Y: 2
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -444,8 +492,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: -6
-    Y: 3
+  - Point:
+      X: -6
+      Y: 3
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -453,8 +502,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: -6
-    Y: 4
+  - Point:
+      X: -6
+      Y: 4
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -462,8 +512,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: -5
-    Y: -5
+  - Point:
+      X: -5
+      Y: -5
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -471,8 +522,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: -5
-    Y: -4
+  - Point:
+      X: -5
+      Y: -4
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -480,8 +532,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: -5
-    Y: -3
+  - Point:
+      X: -5
+      Y: -3
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -489,8 +542,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: -5
-    Y: -2
+  - Point:
+      X: -5
+      Y: -2
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -498,8 +552,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: -5
-    Y: -1
+  - Point:
+      X: -5
+      Y: -1
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -507,8 +562,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: -5
-    Y: 0
+  - Point:
+      X: -5
+      Y: 0
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -516,8 +572,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: -5
-    Y: 1
+  - Point:
+      X: -5
+      Y: 1
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -525,8 +582,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: -5
-    Y: 2
+  - Point:
+      X: -5
+      Y: 2
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -534,8 +592,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: -5
-    Y: 3
+  - Point:
+      X: -5
+      Y: 3
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -543,8 +602,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: -5
-    Y: 4
+  - Point:
+      X: -5
+      Y: 4
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -552,8 +612,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: -4
-    Y: -5
+  - Point:
+      X: -4
+      Y: -5
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -561,8 +622,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: -4
-    Y: -4
+  - Point:
+      X: -4
+      Y: -4
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -570,8 +632,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: -4
-    Y: -3
+  - Point:
+      X: -4
+      Y: -3
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -579,8 +642,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: -4
-    Y: -2
+  - Point:
+      X: -4
+      Y: -2
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -588,8 +652,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: -4
-    Y: -1
+  - Point:
+      X: -4
+      Y: -1
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -597,8 +662,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: -4
-    Y: 0
+  - Point:
+      X: -4
+      Y: 0
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -606,8 +672,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: -4
-    Y: 1
+  - Point:
+      X: -4
+      Y: 1
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -615,8 +682,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: -4
-    Y: 2
+  - Point:
+      X: -4
+      Y: 2
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -624,8 +692,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: -4
-    Y: 3
+  - Point:
+      X: -4
+      Y: 3
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -633,8 +702,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: -4
-    Y: 4
+  - Point:
+      X: -4
+      Y: 4
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -642,8 +712,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: -3
-    Y: -5
+  - Point:
+      X: -3
+      Y: -5
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -651,8 +722,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: -3
-    Y: -4
+  - Point:
+      X: -3
+      Y: -4
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -660,8 +732,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: -3
-    Y: -3
+  - Point:
+      X: -3
+      Y: -3
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -669,8 +742,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: -3
-    Y: -2
+  - Point:
+      X: -3
+      Y: -2
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -678,8 +752,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: -3
-    Y: -1
+  - Point:
+      X: -3
+      Y: -1
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -687,8 +762,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: -3
-    Y: 0
+  - Point:
+      X: -3
+      Y: 0
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -696,8 +772,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: -3
-    Y: 1
+  - Point:
+      X: -3
+      Y: 1
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -705,8 +782,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: -3
-    Y: 2
+  - Point:
+      X: -3
+      Y: 2
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -714,8 +792,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: -3
-    Y: 3
+  - Point:
+      X: -3
+      Y: 3
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -723,8 +802,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: -3
-    Y: 4
+  - Point:
+      X: -3
+      Y: 4
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -732,8 +812,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: -2
-    Y: -5
+  - Point:
+      X: -2
+      Y: -5
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -741,8 +822,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: -2
-    Y: -4
+  - Point:
+      X: -2
+      Y: -4
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -750,8 +832,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: -2
-    Y: -3
+  - Point:
+      X: -2
+      Y: -3
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -759,8 +842,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: -2
-    Y: -2
+  - Point:
+      X: -2
+      Y: -2
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -768,8 +852,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: -2
-    Y: -1
+  - Point:
+      X: -2
+      Y: -1
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -777,8 +862,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: -2
-    Y: 0
+  - Point:
+      X: -2
+      Y: 0
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -786,8 +872,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: -2
-    Y: 1
+  - Point:
+      X: -2
+      Y: 1
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -795,8 +882,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: -2
-    Y: 2
+  - Point:
+      X: -2
+      Y: 2
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -804,8 +892,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: -2
-    Y: 3
+  - Point:
+      X: -2
+      Y: 3
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -813,8 +902,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: -2
-    Y: 4
+  - Point:
+      X: -2
+      Y: 4
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -822,8 +912,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: -1
-    Y: -5
+  - Point:
+      X: -1
+      Y: -5
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -831,8 +922,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: -1
-    Y: -4
+  - Point:
+      X: -1
+      Y: -4
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -840,8 +932,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: -1
-    Y: -3
+  - Point:
+      X: -1
+      Y: -3
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -849,8 +942,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: -1
-    Y: -2
+  - Point:
+      X: -1
+      Y: -2
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -858,8 +952,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: -1
-    Y: -1
+  - Point:
+      X: -1
+      Y: -1
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -867,8 +962,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: -1
-    Y: 0
+  - Point:
+      X: -1
+      Y: 0
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -876,8 +972,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: -1
-    Y: 1
+  - Point:
+      X: -1
+      Y: 1
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -885,8 +982,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: -1
-    Y: 2
+  - Point:
+      X: -1
+      Y: 2
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -894,8 +992,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: -1
-    Y: 3
+  - Point:
+      X: -1
+      Y: 3
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -903,8 +1002,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: -1
-    Y: 4
+  - Point:
+      X: -1
+      Y: 4
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -912,8 +1012,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: 0
-    Y: -5
+  - Point:
+      X: 0
+      Y: -5
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -921,8 +1022,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: 0
-    Y: -4
+  - Point:
+      X: 0
+      Y: -4
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -930,8 +1032,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: 0
-    Y: -3
+  - Point:
+      X: 0
+      Y: -3
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -939,8 +1042,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: 0
-    Y: -2
+  - Point:
+      X: 0
+      Y: -2
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -948,8 +1052,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: 0
-    Y: -1
+  - Point:
+      X: 0
+      Y: -1
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -957,8 +1062,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: 0
-    Y: 0
+  - Point:
+      X: 0
+      Y: 0
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -966,8 +1072,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 1
-  - X: 0
-    Y: 1
+  - Point:
+      X: 0
+      Y: 1
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -975,8 +1082,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: 0
-    Y: 2
+  - Point:
+      X: 0
+      Y: 2
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -984,8 +1092,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: 0
-    Y: 3
+  - Point:
+      X: 0
+      Y: 3
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -993,8 +1102,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: 0
-    Y: 4
+  - Point:
+      X: 0
+      Y: 4
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -1002,8 +1112,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: 1
-    Y: -5
+  - Point:
+      X: 1
+      Y: -5
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -1011,8 +1122,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: 1
-    Y: -4
+  - Point:
+      X: 1
+      Y: -4
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -1020,8 +1132,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: 1
-    Y: -3
+  - Point:
+      X: 1
+      Y: -3
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -1029,8 +1142,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: 1
-    Y: -2
+  - Point:
+      X: 1
+      Y: -2
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -1038,8 +1152,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: 1
-    Y: -1
+  - Point:
+      X: 1
+      Y: -1
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -1047,8 +1162,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: 1
-    Y: 0
+  - Point:
+      X: 1
+      Y: 0
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -1056,8 +1172,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: 1
-    Y: 1
+  - Point:
+      X: 1
+      Y: 1
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -1065,8 +1182,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: 1
-    Y: 2
+  - Point:
+      X: 1
+      Y: 2
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -1074,8 +1192,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: 1
-    Y: 3
+  - Point:
+      X: 1
+      Y: 3
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -1083,8 +1202,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: 1
-    Y: 4
+  - Point:
+      X: 1
+      Y: 4
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -1092,8 +1212,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: 2
-    Y: -5
+  - Point:
+      X: 2
+      Y: -5
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -1101,8 +1222,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: 2
-    Y: -4
+  - Point:
+      X: 2
+      Y: -4
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -1110,8 +1232,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: 2
-    Y: -3
+  - Point:
+      X: 2
+      Y: -3
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -1119,8 +1242,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: 2
-    Y: -2
+  - Point:
+      X: 2
+      Y: -2
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -1128,8 +1252,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: 2
-    Y: -1
+  - Point:
+      X: 2
+      Y: -1
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -1137,8 +1262,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: 2
-    Y: 0
+  - Point:
+      X: 2
+      Y: 0
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -1146,8 +1272,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: 2
-    Y: 1
+  - Point:
+      X: 2
+      Y: 1
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -1155,8 +1282,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: 2
-    Y: 2
+  - Point:
+      X: 2
+      Y: 2
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -1164,8 +1292,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: 2
-    Y: 3
+  - Point:
+      X: 2
+      Y: 3
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -1173,8 +1302,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: 2
-    Y: 4
+  - Point:
+      X: 2
+      Y: 4
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -1182,8 +1312,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: 3
-    Y: -5
+  - Point:
+      X: 3
+      Y: -5
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -1191,8 +1322,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: 3
-    Y: -4
+  - Point:
+      X: 3
+      Y: -4
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -1200,8 +1332,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: 3
-    Y: -3
+  - Point:
+      X: 3
+      Y: -3
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -1209,8 +1342,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: 3
-    Y: -2
+  - Point:
+      X: 3
+      Y: -2
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -1218,8 +1352,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: 3
-    Y: -1
+  - Point:
+      X: 3
+      Y: -1
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -1227,8 +1362,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: 3
-    Y: 0
+  - Point:
+      X: 3
+      Y: 0
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -1236,8 +1372,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: 3
-    Y: 1
+  - Point:
+      X: 3
+      Y: 1
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -1245,8 +1382,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: 3
-    Y: 2
+  - Point:
+      X: 3
+      Y: 2
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -1254,8 +1392,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: 3
-    Y: 3
+  - Point:
+      X: 3
+      Y: 3
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -1263,8 +1402,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: 3
-    Y: 4
+  - Point:
+      X: 3
+      Y: 4
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -1272,8 +1412,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: 4
-    Y: -5
+  - Point:
+      X: 4
+      Y: -5
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -1281,8 +1422,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: 4
-    Y: -4
+  - Point:
+      X: 4
+      Y: -4
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -1290,8 +1432,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: 4
-    Y: -3
+  - Point:
+      X: 4
+      Y: -3
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -1299,8 +1442,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: 4
-    Y: -2
+  - Point:
+      X: 4
+      Y: -2
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -1308,8 +1452,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: 4
-    Y: -1
+  - Point:
+      X: 4
+      Y: -1
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -1317,8 +1462,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: 4
-    Y: 0
+  - Point:
+      X: 4
+      Y: 0
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -1326,8 +1472,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: 4
-    Y: 1
+  - Point:
+      X: 4
+      Y: 1
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -1335,8 +1482,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: 4
-    Y: 2
+  - Point:
+      X: 4
+      Y: 2
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -1344,8 +1492,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: 4
-    Y: 3
+  - Point:
+      X: 4
+      Y: 3
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -1353,8 +1502,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: 4
-    Y: 4
+  - Point:
+      X: 4
+      Y: 4
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -1362,8 +1512,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: 5
-    Y: -5
+  - Point:
+      X: 5
+      Y: -5
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -1371,8 +1522,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: 5
-    Y: -4
+  - Point:
+      X: 5
+      Y: -4
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -1380,8 +1532,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: 5
-    Y: -3
+  - Point:
+      X: 5
+      Y: -3
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -1389,8 +1542,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: 5
-    Y: -2
+  - Point:
+      X: 5
+      Y: -2
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -1398,8 +1552,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: 5
-    Y: -1
+  - Point:
+      X: 5
+      Y: -1
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -1407,8 +1562,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: 5
-    Y: 0
+  - Point:
+      X: 5
+      Y: 0
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -1416,8 +1572,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: 5
-    Y: 1
+  - Point:
+      X: 5
+      Y: 1
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -1425,8 +1582,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: 5
-    Y: 2
+  - Point:
+      X: 5
+      Y: 2
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -1434,8 +1592,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: 5
-    Y: 3
+  - Point:
+      X: 5
+      Y: 3
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -1443,8 +1602,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: 5
-    Y: 4
+  - Point:
+      X: 5
+      Y: 4
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -1452,8 +1612,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: 6
-    Y: -5
+  - Point:
+      X: 6
+      Y: -5
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -1461,8 +1622,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: 6
-    Y: -4
+  - Point:
+      X: 6
+      Y: -4
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -1470,8 +1632,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: 6
-    Y: -3
+  - Point:
+      X: 6
+      Y: -3
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -1479,8 +1642,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: 6
-    Y: -2
+  - Point:
+      X: 6
+      Y: -2
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -1488,8 +1652,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: 6
-    Y: -1
+  - Point:
+      X: 6
+      Y: -1
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -1497,8 +1662,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: 6
-    Y: 0
+  - Point:
+      X: 6
+      Y: 0
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -1506,8 +1672,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: 6
-    Y: 1
+  - Point:
+      X: 6
+      Y: 1
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -1515,8 +1682,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: 6
-    Y: 2
+  - Point:
+      X: 6
+      Y: 2
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -1524,8 +1692,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: 6
-    Y: 3
+  - Point:
+      X: 6
+      Y: 3
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -1533,8 +1702,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: 6
-    Y: 4
+  - Point:
+      X: 6
+      Y: 4
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -1542,8 +1712,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: 7
-    Y: -5
+  - Point:
+      X: 7
+      Y: -5
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -1551,8 +1722,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: 7
-    Y: -4
+  - Point:
+      X: 7
+      Y: -4
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -1560,8 +1732,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: 7
-    Y: -3
+  - Point:
+      X: 7
+      Y: -3
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -1569,8 +1742,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: 7
-    Y: -2
+  - Point:
+      X: 7
+      Y: -2
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -1578,8 +1752,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: 7
-    Y: -1
+  - Point:
+      X: 7
+      Y: -1
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -1587,8 +1762,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: 7
-    Y: 0
+  - Point:
+      X: 7
+      Y: 0
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -1596,8 +1772,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: 7
-    Y: 1
+  - Point:
+      X: 7
+      Y: 1
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -1605,8 +1782,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: 7
-    Y: 2
+  - Point:
+      X: 7
+      Y: 2
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -1614,8 +1792,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: 7
-    Y: 3
+  - Point:
+      X: 7
+      Y: 3
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -1623,8 +1802,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: 7
-    Y: 4
+  - Point:
+      X: 7
+      Y: 4
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -1632,8 +1812,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: 8
-    Y: -5
+  - Point:
+      X: 8
+      Y: -5
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -1641,8 +1822,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: 8
-    Y: -4
+  - Point:
+      X: 8
+      Y: -4
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -1650,8 +1832,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: 8
-    Y: -3
+  - Point:
+      X: 8
+      Y: -3
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -1659,8 +1842,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: 8
-    Y: -2
+  - Point:
+      X: 8
+      Y: -2
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -1668,8 +1852,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: 8
-    Y: -1
+  - Point:
+      X: 8
+      Y: -1
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -1677,8 +1862,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: 8
-    Y: 0
+  - Point:
+      X: 8
+      Y: 0
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -1686,8 +1872,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: 8
-    Y: 1
+  - Point:
+      X: 8
+      Y: 1
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -1695,8 +1882,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: 8
-    Y: 2
+  - Point:
+      X: 8
+      Y: 2
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -1704,8 +1892,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: 8
-    Y: 3
+  - Point:
+      X: 8
+      Y: 3
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -1713,8 +1902,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: 8
-    Y: 4
+  - Point:
+      X: 8
+      Y: 4
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -1722,8 +1912,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: 9
-    Y: -5
+  - Point:
+      X: 9
+      Y: -5
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -1731,8 +1922,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: 9
-    Y: -4
+  - Point:
+      X: 9
+      Y: -4
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -1740,8 +1932,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: 9
-    Y: -3
+  - Point:
+      X: 9
+      Y: -3
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -1749,8 +1942,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: 9
-    Y: -2
+  - Point:
+      X: 9
+      Y: -2
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -1758,8 +1952,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: 9
-    Y: -1
+  - Point:
+      X: 9
+      Y: -1
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -1767,8 +1962,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: 9
-    Y: 0
+  - Point:
+      X: 9
+      Y: 0
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -1776,8 +1972,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: 9
-    Y: 1
+  - Point:
+      X: 9
+      Y: 1
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -1785,8 +1982,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: 9
-    Y: 2
+  - Point:
+      X: 9
+      Y: 2
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -1794,8 +1992,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: 9
-    Y: 3
+  - Point:
+      X: 9
+      Y: 3
     TopRight: 0
     TopLeft: 0
     Right: 0
@@ -1803,8 +2002,9 @@ MonoBehaviour:
     BottomRight: 0
     BottomLeft: 0
     Type: 0
-  - X: 9
-    Y: 4
+  - Point:
+      X: 9
+      Y: 4
     TopRight: 0
     TopLeft: 0
     Right: 0
