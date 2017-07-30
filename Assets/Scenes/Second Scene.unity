@@ -149,6 +149,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CellPrefab: {fileID: 1672724659882038, guid: 8cc3a8d44d456c34fa7ede0941026d5f, type: 2}
+  FieldData: {fileID: 11400000, guid: 498c5e91c80219c47b05b18723b9142a, type: 2}
   Height: 10
   Width: 20
   Radius: 2

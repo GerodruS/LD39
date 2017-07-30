@@ -18,6 +18,8 @@ public class Cell : MonoBehaviour
     public GameObject BottomRightBorder;
     public GameObject BottomLeftBorder;
 
+    public GameObject BaseIcon;
+
 #if UNITY_EDITOR
     void Update()
     {
@@ -29,4 +31,22 @@ public class Cell : MonoBehaviour
         BottomLeftBorder.SetActive(BottomLeft);
     }
 #endif
+
+    public void SetType(FieldData.CellType type)
+    {
+        BaseIcon.SetActive(false);
+        switch (type)
+        {
+            case FieldData.CellType.Common:
+                break;
+
+            case FieldData.CellType.Base:
+                BaseIcon.SetActive(true);
+                break;
+
+            default:
+                Debug.LogError("SetType");
+                break;
+        }
+    }
 }
