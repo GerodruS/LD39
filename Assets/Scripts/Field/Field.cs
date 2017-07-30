@@ -13,6 +13,8 @@ public class Field : MonoBehaviour
 
     Drone CurrentDrone;
     FieldData.Point DronePoint;
+    FieldData.Direction PreviousDirection;
+    int ComboBonus;
     Cell[] Cells;
 
     float VerticalDistance
@@ -98,23 +100,39 @@ public class Field : MonoBehaviour
         {
             if (elem.Value != targetCell) continue;
             var cost = FieldData.DirectionCost[elem.Key];
+            if (PreviousDirection == elem.Key)
+                if (ComboBonus + 1 < cost)
+                    ++ComboBonus;
+                else
+                    ComboBonus = 0;
+            else
+                ComboBonus = 0;
+            cost -= ComboBonus;
             if (CurrentDrone.Power < cost)
             {
                 Debug.LogFormat("Not enough power: {0}/{1}", CurrentDrone.Power, cost);
                 return;
             }
             CurrentDrone.Power -= cost;
+            PreviousDirection = elem.Key;
             MoveDrone(x, y);
-            print(elem.Key);
+//            print(elem.Key);
             return;
         }
-        foreach (var elem in droneCell.AdjacentCells)
-        {
-            if (elem.Value == null) continue;
-            if (elem.Value != targetCell.AdjacentCells[FieldData.OppositeDirection[elem.Key]]) continue;
-            print(elem.Key);
-            return;
-        }
+//        foreach (var elem in droneCell.AdjacentCells)
+//        {
+//            if (elem.Value == null) continue;
+//            if (elem.Value != targetCell.AdjacentCells[FieldData.OppositeDirection[elem.Key]]) continue;
+//            var cost = FieldData.DirectionCost[elem.Key];
+//            if (CurrentDrone.Power < cost)
+//            {
+//                Debug.LogFormat("Not enough power: {0}/{1}", CurrentDrone.Power, cost);
+//                return;
+//            }
+//            CurrentDrone.Power -= cost;
+//            print(elem.Key);
+//            return;
+//        }
         print("--");
     }
 
@@ -172,6 +190,7 @@ public class Field : MonoBehaviour
             var newDrone = Instantiate(DronePrefab, transform);
             newDrone.transform.localPosition = baseCell.transform.localPosition;
             CurrentDrone = newDrone;
+            PreviousDirection = FieldData.Direction.None;
             DronePoint = baseCell.Data.Point;
         }
     }

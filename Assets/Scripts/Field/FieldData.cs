@@ -8,6 +8,7 @@ public class FieldData : ScriptableObject
 {
     public enum Direction
     {
+        None,
         TopRight,
         Right,
         BottomRight,
@@ -27,6 +28,16 @@ public class FieldData : ScriptableObject
     };
 
     public Dictionary<Direction, int> DirectionCost = new Dictionary<Direction, int>
+    {
+        {Direction.TopRight, 3},
+        {Direction.Right, 2},
+        {Direction.BottomRight, 1},
+        {Direction.BottomLeft, 1},
+        {Direction.Left, 2},
+        {Direction.TopLeft, 3},
+    };
+
+    public Dictionary<Direction, int> DoubleDirectionCost = new Dictionary<Direction, int>
     {
         {Direction.TopRight, 3},
         {Direction.Right, 2},
