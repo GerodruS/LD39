@@ -4,6 +4,7 @@
 public class Drone : MonoBehaviour
 {
     public int PowerValue = 100;
+    public int MaxPowerValue = 100;
 
     public Events.Int OnPowerLevelChanged;
 

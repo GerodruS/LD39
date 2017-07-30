@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-[CreateAssetMenu(fileName = "Field Data", menuName = "Field Data", order = 1)]
+[CreateAssetMenu(fileName = "Field Data", menuName = "Field Data")]
 public class FieldData : ScriptableObject
 {
     public enum Direction

@@ -35,7 +35,7 @@ public class Field : MonoBehaviour
             var offset = 0 == x % 2 ? 0.0f : 0.5f;
             var cellObject = Instantiate(CellPrefab, CellParent);
             cellObject.transform.localPosition = new Vector3(x * 0.5f * Radius, (y + offset) * verticalDistance, 0.0f);
-            cellObject.name = string.Format("{0: 00;-00; 00}   {1: 00;-00; 00}", x, y);
+            cellObject.name = cellData.ToString();
             var cell = cellObject.GetComponent<Cell>();
             cell.SetData(cellData);
             cell.OnClicked.AddListener(OnCellClicked);
