@@ -80,6 +80,8 @@ public class FieldData : ScriptableObject
 
         public CellType Type;
 
+        public CellModificationHolder[] Modificators;
+
         public new string ToString()
         {
             return string.Format("{0: 00;-00; 00}   {1: 00;-00; 00}", Point.X, Point.Y);

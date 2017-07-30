@@ -71,6 +71,16 @@ public class Field : MonoBehaviour
         TrySpawnDrone();
     }
 
+    public void TryMoveDrone(FieldData.Direction direction)
+    {
+        var droneCell = GetCell(CurrentDrone.CurrentPoint);
+        var nextCell = droneCell.AdjacentCells[direction];
+        if (nextCell != null)
+        {
+            MoveDrone(nextCell.Data.Point.X, nextCell.Data.Point.Y);
+        }
+    }
+
     void Generate()
     {
         var halfWidth = Width / 2;

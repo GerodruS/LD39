@@ -18,7 +18,9 @@ public class Cell : MonoBehaviour
 
     public GameObject BaseIcon;
     public GameObject Curtain;
+    public Transform ModificationsRoot;
 
+    public Events.Empty OnCellWasActivated;
     public Events.IntInt OnClicked;
 
 #if UNITY_EDITOR
@@ -42,6 +44,7 @@ public class Cell : MonoBehaviour
             if (elem.Value != null)
                 elem.Value.Discover();
         }
+        OnCellWasActivated.Invoke();
     }
 
     void Discover()
@@ -54,6 +57,7 @@ public class Cell : MonoBehaviour
         Data = data;
         SetType(data.Type);
         RefreshRestrictions();
+        SpawnModifications();
     }
 
     void SetType(FieldData.CellType type)
@@ -82,5 +86,14 @@ public class Cell : MonoBehaviour
         LeftBorder.SetActive(!Data.Left);
         BottomRightBorder.SetActive(!Data.BottomRight);
         BottomLeftBorder.SetActive(!Data.BottomLeft);
+    }
+
+    void SpawnModifications()
+    {
+        foreach (var modification in Data.Modificators)
+        {
+            var modificator = Instantiate(modification.Prefab, ModificationsRoot);
+            OnCellWasActivated.AddListener(modificator.OnActivate);
+        }
     }
 }
