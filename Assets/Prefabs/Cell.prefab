@@ -42,7 +42,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1515447950949404
 GameObject:
   m_ObjectHideFlags: 0
@@ -73,7 +73,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1564391293987768
 GameObject:
   m_ObjectHideFlags: 1
@@ -89,7 +89,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1642302917576112
 GameObject:
   m_ObjectHideFlags: 1
@@ -105,7 +105,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1672724659882038
 GameObject:
   m_ObjectHideFlags: 0
@@ -114,6 +114,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4638121625591922}
+  - component: {fileID: 114437147831885732}
   m_Layer: 0
   m_Name: Cell
   m_TagString: Untagged
@@ -136,7 +137,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1835924640684950
 GameObject:
   m_ObjectHideFlags: 1
@@ -152,7 +153,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4132537053402306
 Transform:
   m_ObjectHideFlags: 1
@@ -278,6 +279,29 @@ Transform:
   m_Father: {fileID: 4236310395022640}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+--- !u!114 &114437147831885732
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1672724659882038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b915f0be5c692564287fafe59377e144, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TopRight: 0
+  TopLeft: 0
+  Right: 0
+  Left: 0
+  BottomRight: 0
+  BottomLeft: 0
+  TopRightBorder: {fileID: 1559994654801066}
+  TopLeftBorder: {fileID: 1803371972038280}
+  RightBorder: {fileID: 1452406202527626}
+  LeftBorder: {fileID: 1642302917576112}
+  BottomRightBorder: {fileID: 1835924640684950}
+  BottomLeftBorder: {fileID: 1564391293987768}
 --- !u!212 &212007859572718516
 SpriteRenderer:
   m_ObjectHideFlags: 1
