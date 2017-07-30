@@ -848,6 +848,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: Events+Int, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  CurrentDrone: {fileID: 0}
 --- !u!1 &1439691745
 GameObject:
   m_ObjectHideFlags: 0

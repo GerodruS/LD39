@@ -18,7 +18,7 @@ public class Field : MonoBehaviour
     public Events.Empty OnPlayerWasMoved;
     public Events.Int OnDronesCountWasChanged;
 
-    Drone CurrentDrone;
+    public Drone CurrentDrone;
     int ComboBonus;
     Cell[] Cells;
 

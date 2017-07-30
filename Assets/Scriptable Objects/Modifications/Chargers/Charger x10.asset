@@ -1,0 +1,14 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7856b0072e9514a448e55cf051bc9301, type: 3}
+  m_Name: Charger x10
+  m_EditorClassIdentifier: 
+  Prefab: {fileID: 114933825280216360, guid: 1788d6f792932ac468b8b01fbaff0c01, type: 2}
