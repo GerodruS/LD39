@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using UnityEngine;
 
 
 [ExecuteInEditMode]
@@ -20,6 +21,8 @@ public class Cell : MonoBehaviour
     public GameObject BottomRightBorder;
     public GameObject BottomLeftBorder;
 
+    public Dictionary<FieldData.Direction, Cell> AdjacentCells = new Dictionary<FieldData.Direction, Cell>();
+
     public GameObject BaseIcon;
 
     public Events.IntInt OnClicked;
@@ -38,7 +41,7 @@ public class Cell : MonoBehaviour
 
     void OnMouseDown()
     {
-        print(this);
+//        print(this);
         OnClicked.Invoke(Point.X, Point.Y);
     }
 

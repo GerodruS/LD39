@@ -12,6 +12,7 @@ public class Field : MonoBehaviour
     public float Radius;
 
     Drone CurrentDrone;
+    FieldData.Point DronePoint;
     Cell[] Cells;
 
     float VerticalDistance
@@ -37,6 +38,17 @@ public class Field : MonoBehaviour
             cell.SetData(cellData);
             cell.OnClicked.AddListener(OnCellClicked);
             Cells[i] = cell;
+        }
+        for (int i = 0, n = FieldData.Cells.Length; i < n; ++i)
+        {
+            var cell = Cells[i];
+            cell.AdjacentCells.Add(FieldData.Direction.Right, GetCell(cell.Point.X + 2, cell.Point.Y));
+            cell.AdjacentCells.Add(FieldData.Direction.Left, GetCell(cell.Point.X - 2, cell.Point.Y));
+            var offset = 0 == cell.Point.X % 2 ? -1 : 0;
+            cell.AdjacentCells.Add(FieldData.Direction.TopRight, GetCell(cell.Point.X + 1, cell.Point.Y + 1 + offset));
+            cell.AdjacentCells.Add(FieldData.Direction.TopLeft, GetCell(cell.Point.X - 1, cell.Point.Y + 1 + offset));
+            cell.AdjacentCells.Add(FieldData.Direction.BottomRight, GetCell(cell.Point.X + 1, cell.Point.Y - 0 + offset));
+            cell.AdjacentCells.Add(FieldData.Direction.BottomLeft, GetCell(cell.Point.X - 1, cell.Point.Y - 0 + offset));
         }
     }
 
@@ -74,8 +86,34 @@ public class Field : MonoBehaviour
 
     void TryMoveDrone(int x, int y)
     {
+        var droneCell = GetCell(DronePoint.X, DronePoint.Y);
+        if (droneCell == null)
+            return;
+        var targetCell = GetCell(x, y);
+        if (targetCell == null)
+            return;
+        foreach (var elem in droneCell.AdjacentCells)
+        {
+            if (elem.Value != targetCell) continue;
+            MoveDrone(x, y);
+            print(elem.Key);
+            return;
+        }
+        foreach (var elem in droneCell.AdjacentCells)
+        {
+            if (elem.Value == null) continue;
+            if (elem.Value != targetCell.AdjacentCells[FieldData.OppositeDirection[elem.Key]]) continue;
+            print(elem.Key);
+            return;
+        }
+        print("--");
+    }
+
+    void MoveDrone(int x, int y)
+    {
         CurrentDrone.transform.localPosition = GetPosition(x, y);
         MoveCameraTo(x, y);
+        DronePoint = new FieldData.Point(x, y);
     }
 
     Vector3 GetPosition(int x, int y)
@@ -125,6 +163,7 @@ public class Field : MonoBehaviour
             var newDrone = Instantiate(DronePrefab, transform);
             newDrone.transform.localPosition = baseCell.transform.localPosition;
             CurrentDrone = newDrone;
+            DronePoint = baseCell.Point;
         }
     }
 }
