@@ -5,6 +5,11 @@ using UnityEngine.Events;
 public static class Events
 {
     [Serializable]
+    public class Empty : UnityEvent
+    {
+    }
+
+    [Serializable]
     public class Int : UnityEvent<int>
     {
     }

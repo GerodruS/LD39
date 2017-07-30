@@ -12,9 +12,9 @@ public class Field : MonoBehaviour
     public float Radius;
     public GameObject AbandonButton;
 
+    public Events.Empty OnPlayerWasMoved;
+
     Drone CurrentDrone;
-    FieldData.Point DronePoint;
-    FieldData.Direction PreviousDirection;
     int ComboBonus;
     Cell[] Cells;
 
@@ -93,11 +93,12 @@ public class Field : MonoBehaviour
             TryMoveDrone(x, y);
         else
             TrySpawnDrone();
+        OnPlayerWasMoved.Invoke();
     }
 
     void TryMoveDrone(int x, int y)
     {
-        var droneCell = GetCell(DronePoint.X, DronePoint.Y);
+        var droneCell = GetCell(CurrentDrone.CurrentPoint.X, CurrentDrone.CurrentPoint.Y);
         if (droneCell == null)
             return;
         var targetCell = GetCell(x, y);
@@ -107,7 +108,7 @@ public class Field : MonoBehaviour
         {
             if (elem.Value != targetCell) continue;
             var cost = FieldData.DirectionCost[elem.Key];
-            if (PreviousDirection == elem.Key)
+            if (CurrentDrone.PreviousDirection == elem.Key)
                 if (ComboBonus + 1 < cost)
                     ++ComboBonus;
                 else
@@ -125,7 +126,7 @@ public class Field : MonoBehaviour
             {
                 AbandonButton.SetActive(true);
             }
-            PreviousDirection = elem.Key;
+            CurrentDrone.PreviousDirection = elem.Key;
             MoveDrone(x, y);
 //            print(elem.Key);
             return;
@@ -149,19 +150,23 @@ public class Field : MonoBehaviour
 
     void MoveDrone(int x, int y)
     {
-        CurrentDrone.transform.localPosition = GetPosition(x, y);
-        MoveCameraTo(x, y);
-        DronePoint = new FieldData.Point(x, y);
+        CurrentDrone.MoveTo(x, y);
         GetCell(x, y).OnActivate();
+        MoveCameraTo(x, y);
     }
 
-    Vector3 GetPosition(int x, int y)
+    public Vector3 GetPosition(int x, int y)
     {
         var cell = GetCell(x, y);
         return cell != null ? cell.transform.localPosition : Vector3.zero;
     }
 
-    Cell GetCell(int x, int y)
+    public Cell GetCell(FieldData.Point point)
+    {
+        return GetCell(point.X, point.Y);
+    }
+
+    public Cell GetCell(int x, int y)
     {
         for (int i = 0, n = FieldData.Cells.Length; i < n; ++i)
         {
@@ -201,7 +206,7 @@ public class Field : MonoBehaviour
         {
             var newDrone = Instantiate(DronePrefab, transform);
             CurrentDrone = newDrone;
-            PreviousDirection = FieldData.Direction.None;
+            CurrentDrone.PreviousDirection = FieldData.Direction.None;
             MoveDrone(baseCell.Data.Point.X, baseCell.Data.Point.Y);
         }
         AbandonButton.SetActive(false);

@@ -7,6 +7,24 @@ public class Drone : MonoBehaviour
     public int MaxPowerValue = 100;
 
     public Events.Int OnPowerLevelChanged;
+    public Field Field;
+    public FieldData.Point CurrentPoint;
+    public FieldData.Direction PreviousDirection;
+
+    public int Power
+    {
+        get { return PowerValue; }
+        set
+        {
+            PowerValue = value;
+            OnPowerLevelChanged.Invoke(PowerValue);
+        }
+    }
+
+    void Awake()
+    {
+        Field = FindObjectOfType<Field>();
+    }
 
     void Start()
     {
@@ -25,17 +43,46 @@ public class Drone : MonoBehaviour
             OnPowerLevelChanged.RemoveListener(powerIndicator.OnPowerLevelChanged);
     }
 
-    public void OnAbandon()
+    public void MoveTo(int x, int y)
     {
+        transform.localPosition = Field.GetPosition(x, y);
+        CurrentPoint = new FieldData.Point(x, y);
     }
 
-    public int Power
+    public void OnAbandon()
     {
-        get { return PowerValue; }
-        set
+        Field.OnPlayerWasMoved.AddListener(Descent);
+    }
+
+    void Descent()
+    {
+        var currentCell = Field.GetCell(CurrentPoint);
+        if (currentCell != null)
         {
-            PowerValue = value;
-            OnPowerLevelChanged.Invoke(PowerValue);
+            if (0 == Random.Range(0, 2))
+            {
+                var nextCell = currentCell.AdjacentCells[FieldData.Direction.BottomLeft];
+                if (null == nextCell)
+                {
+                    nextCell = currentCell.AdjacentCells[FieldData.Direction.BottomRight];
+                }
+                if (nextCell != null)
+                {
+                    MoveTo(nextCell.Data.Point.X, nextCell.Data.Point.Y);
+                }
+            }
+            else
+            {
+                var nextCell = currentCell.AdjacentCells[FieldData.Direction.BottomRight];
+                if (null == nextCell)
+                {
+                    nextCell = currentCell.AdjacentCells[FieldData.Direction.BottomLeft];
+                }
+                if (nextCell != null)
+                {
+                    MoveTo(nextCell.Data.Point.X, nextCell.Data.Point.Y);
+                }
+            }
         }
     }
 }
