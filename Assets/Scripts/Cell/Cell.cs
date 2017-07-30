@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 
 [ExecuteInEditMode]
@@ -33,7 +34,8 @@ public class Cell : MonoBehaviour
     void OnMouseDown()
     {
 //        print(this);
-        OnClicked.Invoke(Data.Point.X, Data.Point.Y);
+        if (!EventSystem.current.IsPointerOverGameObject())
+            OnClicked.Invoke(Data.Point.X, Data.Point.Y);
     }
 
     public void OnActivate()
